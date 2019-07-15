@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/</link>
+    <description>Recent content in Tutorials on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/development/webservice/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PrestaShop Webservice lib</title>
+      <link>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/prestashop-webservice-lib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/prestashop-webservice-lib/</guid>
+      <description>Install the lib Pre-requisites  You need a server with mod_rewrite enabled You need the curl extension enabled in PHP  Installing with Composer If you are starting a new project you can init your composer project along with the dependency:
+composer init --require=&amp;quot;Prestashop/Prestashop-webservice-lib:dev-master&amp;quot; -n composer install  Or if you already have an existing project simply add the dependency:
+composer require &amp;quot;Prestashop/Prestashop-webservice-lib&amp;quot;  The library is not PSR compliant and has no namespace therefore you need to update your composer.</description>
+    </item>
+    
+    <item>
+      <title>Change product image</title>
+      <link>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/change_product_image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/change_product_image/</guid>
+      <description>Adding a new image to a product To create a new image we are going to use the /images/products API. We won&amp;rsquo;t use the PrestaShopWebservice class here but a simple curl request.
+&amp;lt;?php $url = &#39;http://example.com&#39;; $key = &#39;YOUR_GENERATED_API_ACCESS_KEY&#39;; $psProductId = 19; $urlImage = $url.&#39;/api/images/products/&#39;.$psProductId.&#39;/&#39;; //Here you set the path to the image you need to upload $image_path = &#39;/path/to/the/image.jpg&#39;; $image_mime = &#39;image/jpg&#39;; $args[&#39;image&#39;] = new CurlFile($image_path, $image_mime); $ch = curl_init(); curl_setopt($ch, CURLOPT_HEADER, 1); curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); curl_setopt($ch, CURLINFO_HEADER_OUT, 1); curl_setopt($ch, CURLOPT_URL, $urlImage); curl_setopt($ch, CURLOPT_POST, 1); curl_setopt($ch, CURLOPT_USERPWD, $key.</description>
+    </item>
+    
+  </channel>
+</rss>

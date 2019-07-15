@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contribution guidelines on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/</link>
+    <description>Recent content in Contribution guidelines on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 May 2019 14:10:37 +0200</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contribution guidelines for modules</title>
+      <link>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/project-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/project-modules/</guid>
+      <description>Contribution guidelines for modules This document describes general guidelines for contributing to PrestaShop modules hosted on GitHub.
+How to contribute Contributors wishing to edit a module&amp;rsquo;s files should follow the following process:
+ Create your GitHub account, if you do not have one already. Fork the project to your GitHub account. Clone your fork to your local machine in the /modules directory of your PrestaShop installation. Create a branch in your local clone of the module for your changes.</description>
+    </item>
+    
+  </channel>
+</rss>

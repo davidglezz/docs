@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The PrestaShop architecture on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/development/architecture/</link>
+    <description>Recent content in The PrestaShop architecture on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/development/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding the &#34;src&#34; folder</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/understanding-src-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/understanding-src-folder/</guid>
+      <description>Understanding the &amp;ldquo;src&amp;rdquo; folder The main idea when doing the 1.7 release was to use Symfony as a replacement for our own PrestaShop framework.
+In &amp;ldquo;src&amp;rdquo; folder you&amp;rsquo;ll find 3 main folders with different purposes:
+ Core: the refactored classes or business logic extraction for PrestaShop 1.7; Adapter: the classes that still depends on legacy framework (Context, Dispatcher or constants for instance); PrestaShopBundle: the classes that acts as a glue between PrestaShop classes and Symfony  Core .</description>
+    </item>
+    
+  </channel>
+</rss>

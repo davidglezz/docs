@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting started on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/modules/creation/</link>
+    <description>Recent content in Getting started on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Apr 2019 10:01:30 +0200</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/modules/creation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Folder structure</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/module-file-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/module-file-structure/</guid>
+      <description>Module file structure A module is made of a lot of files, all stored in a folder that bears the same name as the module, that folder being in turn stored in the /modules folder at the root of the main PrestaShop folder: /modules/&amp;lt;name_of_the_module&amp;gt;/.
+Here are the possible files and folders for a PrestaShop 1.7 module:
+➜ module tree -L 3 . ├── config │ ├── services.yml │ ├── admin │ │ └── services.</description>
+    </item>
+    
+    <item>
+      <title>Adding a configuration page</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/adding-configuration-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/adding-configuration-page/</guid>
+      <description>Adding a configuration page Your module can get a &amp;ldquo;Configure&amp;rdquo; link in the back office module list, and therefore let the user change some settings. This &amp;ldquo;Configure&amp;rdquo; link appears with addition of the getContent() method to your main class. This is a standard PrestaShop method: its sole existence sends a message to the back office, saying &amp;ldquo;there&amp;rsquo;s a configuration page in this module, display the configuration link&amp;rdquo;.
+But having a getContent() public method in the MyModule object only makes the &amp;ldquo;Configure&amp;rdquo; link appear; it does not create the configuration page out of nowhere.</description>
+    </item>
+    
+    <item>
+      <title>Displaying content on the front office</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/displaying-content-in-front-office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/displaying-content-in-front-office/</guid>
+      <description>Displaying content on the front office As it is, the module does not do much. In order to display something on the front office, we have to add support for a few hooks. This is done by implementing the hooks&amp;rsquo; methods, and that was actually done in the install() method we wrote earlier, using the registerHook() method:
+public function install() { if (Shop::isFeatureActive()) { Shop::setContext(Shop::CONTEXT_ALL); } return parent::install() &amp;amp;&amp;amp; $this-&amp;gt;registerHook(&#39;leftColumn&#39;) &amp;amp;&amp;amp; $this-&amp;gt;registerHook(&#39;header&#39;) &amp;amp;&amp;amp; Configuration::updateValue(&#39;MYMODULE_NAME&#39;, &#39;my friend&#39;); }  As you can see, we make it so that the module is hooked to the &amp;ldquo;leftColumn&amp;rdquo; and &amp;ldquo;header&amp;rdquo; hooks.</description>
+    </item>
+    
+    <item>
+      <title>Enabling the Auto-Update</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/enabling-auto-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/enabling-auto-update/</guid>
+      <description>Enabling the Auto-Update Since PrestaShop 1.5, it is possible to have your module auto-update: once a new version is available, PrestaShop suggests an &amp;ldquo;Update&amp;rdquo; button to the user. Clicking this button will trigger a series of methods, each leading closer to the latest version of your module.
+In order to bring auto-update support to your module, you need three main things:
+ Clearly indicate the module&amp;rsquo;s version number in its constructor method: $this-&amp;gt;version = &#39;1.</description>
+    </item>
+    
+    <item>
+      <title>Module translation</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/module-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/module-translation/</guid>
+      <description>Module translation The module&amp;rsquo;s text strings are written in English, but you might want French, Spanish or Polish shop owners to use your module too. You therefore have to translate those strings into those languages, both the front office and the back office strings. Ideally, you should translate your module in all the languages that are installed on your shop. This could be a tedious task, but a whole system has been put in place in order to help you out.</description>
+    </item>
+    
+    <item>
+      <title>Good practices for developing modules</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/good-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/good-practices/</guid>
+      <description>Good practices for developing modules DOs and DON&amp;rsquo;Ts Do  Add a link to your documentation included in your ZIP File and to your support page on Addons in the module interface. Follow our Coding Standards Create your own database tables, do not alter PrestaShop&amp;rsquo;s. Develop your module in English, then use PrestaShop translation system to translate your module. Go through directories using PrestaShop constants like: _PS_CONFIG_DIR_ . &#39;/config.inc.php&#39;  Don&amp;rsquo;t  Don&amp;rsquo;t insert external links into your module code or module documentation.</description>
+    </item>
+    
+  </channel>
+</rss>

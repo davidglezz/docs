@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/basics/installation/</link>
+    <description>Recent content in Installation on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Apr 2019 10:01:30 +0200</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/basics/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>System requirements for PrestaShop 1.7</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/</guid>
+      <description>.support-yes, .example-yes { background-color: #8ce48c; } .support-no, .example-no { background-color: #e89b9b; } .example-yes, .example-no { display: inline-block; width: 1.1rem; height: 1.1rem; margin-bottom: -2px; }  System requirements for PrestaShop 1.7 PrestaShop needs the following server configuration in order to run:
+ System: Unix, Linux or Windows. Web server: Apache Web Server 2.2 or any later version. PHP: We recommend PHP 7.1 or later. See the compatibility chart below for more details.</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/installation/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/installation/configuration/</guid>
+      <description>Configuring PrestaShop By default, PrestaShop is configured to provide a secure and stable environment to both the shop administrator and the customers.
+As a developer, there are several changes that you could and should bring to the default installation in order to help you code better, spot bugs faster, and generally make a great PrestaShop product.
+Disabling the cache and forcing Smarty compilation When your development has an impact on the front office, whether you are building a theme or simply a module which displays information to the customer, you should force the template file compilation and disable the cache, so as to always see the result of your changes directly.</description>
+    </item>
+    
+  </channel>
+</rss>

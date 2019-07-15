@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/modules/concepts/services/</link>
+    <description>Recent content in Services on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jul 2019 12:42:01 +0200</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/modules/concepts/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

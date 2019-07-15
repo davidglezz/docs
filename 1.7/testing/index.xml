@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/testing/</link>
+    <description>Recent content in Testing on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to execute tests</title>
+      <link>https://devdocs.prestashop.com/1.7/testing/how-to-launch-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/testing/how-to-launch-tests/</guid>
+      <description>How to execute the PrestaShop automatic test suite Executing Unit/integration test suites At least four test suites are available, testing different parts of PrestaShop:
+ Legacy tests: heritage from PrestaShop 1.6: mix of unit, integration and functional tests; Legacy controllers: added to help with the Symfony migration, ensures that old Back Office controllers are still runnable; Admin tests: specific to PrestaShop 1.7, tests src/Core and src/Adapter classes; Symfony specific tests: specific to PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>How to create your own tests</title>
+      <link>https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-tests/</guid>
+      <description>How to create your own tests Creating a Unit test Everything is explained in the PHPUnit 5.7 documentation.
+For unit tests, we strongly encourage you to base your test on the PHPUnit&amp;rsquo;s TestCase class only.
+For instance:
+namespace Tests\Unit\Foo; use PHPUnit\Framework\TestCase; class BarTest extends TestCase { /* ... */ }  Unit tests should be located into Unit folder and follow the same path as the tested class: if a class is located into src/Core/Foo/Baz, the unit test should be into tests/Unit/Core/Foo/Baz folder.</description>
+    </item>
+    
+  </channel>
+</rss>

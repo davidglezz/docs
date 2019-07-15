@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to migrate Back Office pages to Symfony 3 on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/</link>
+    <description>Recent content in How to migrate Back Office pages to Symfony 3 on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jul 2019 15:58:14 -0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Templating with Twig</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/templating-with-twig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/templating-with-twig/</guid>
+      <description>Templating with Twig This is mostly the easy part. Legacy pages use Smarty while modern pages use Twig. These templating engines are actually similar in many ways.
+For instance, this is a legacy template:
+&amp;lt;span class=&amp;quot;employee_avatar_small&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;img&amp;quot; alt=&amp;quot;&amp;quot; src=&amp;quot;{$employee_image}&amp;quot; /&amp;gt; &amp;lt;/span&amp;gt; {$employee_name}  All of the legacy templates are located in the admin-dev/themes/default/template/controller folder
+ &amp;hellip; and here is a possible migration of it to Twig:
+&amp;lt;span class=&amp;quot;employee_avatar_small&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;img&amp;quot; alt=&amp;quot;{{ employee.</description>
+    </item>
+    
+    <item>
+      <title>Controller and Routing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/</guid>
+      <description>Controller and Routing Modern/Symfony Controllers Read the Symfony documentation on Controllers and Routing.
+ Every migrated page needs one or more Controllers: if you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it.
+New controllers should be placed in the src/PrestaShopBundle/Controller/Admin folder. Starting on 1.7.3, controllers are being progressively organized in sub-folders following the Back Office menu.</description>
+    </item>
+    
+    <item>
+      <title>Hooks</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/hooks/</guid>
+      <description>How to migrate hooks Hooks are the most important feature for the PrestaShop developers because they allow them to improve PrestaShop by adding code or content in multiple points of the application. For Symfony developers, you can see that as Events on steroids. To keep some degree of compatibility with 1.6 or 1.7 (pre-Symfony migration) modules, we need to ensure that hooks are still available, invoked and/or rendered at the right place.</description>
+    </item>
+    
+    <item>
+      <title>Grid / CRUD</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/grid-crud-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/grid-crud-page/</guid>
+      <description>How to migrate a Grid/CRUD page In PrestaShop&amp;rsquo;s Back Office, most of the pages are organized the same way.
+We can already see 2 categories of pages that represent almost 90% of back office:
+ Configuration pages: forms that alter the configuration; CRUD pages: pages with a filterable/searchable table of data and some options to access a form of creation/edition;  CRUD pages provide a lot of features.
+Access to a lot of data, ordered by column: this data can be simple (text) or more complex (display a thumbnail).</description>
+    </item>
+    
+    <item>
+      <title>Cleaning up</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/clean-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/clean-up/</guid>
+      <description> Cleaning up Once everything is migrated, refactored, extracted to specific classes and working like a charm, it&amp;rsquo;s time to remove the old, migrated parts:
+ Delete the old controller. Delete the old templates (delete the admin-dev/themes/default/template/controller/{name} folder. Delete the related &amp;ldquo;legacy tests&amp;rdquo;.  </description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</guid>
+      <description>Testing You are encouraged to add both unit and functional tests for every new class you have created.
+You must add a smoke test (also called &amp;ldquo;survival&amp;rdquo;) for every new page you migrate.
+Smoke testing A smoke test is a really simple and basic test that ensure the page will load with the right HTTP code. This won&amp;rsquo;t ensure the page will works as expected but if the test fails, this ensure the page is not functional.</description>
+    </item>
+    
+  </channel>
+</rss>

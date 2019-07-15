@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Core changes on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/modules/core_updates/</link>
+    <description>Recent content in Core changes on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/modules/core_updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Changes in PrestaShop 1.7.5</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.5/</guid>
+      <description>Notable changes in PrestaShop 1.7.5 LazyArrays Starting with PrestaShop 1.7.5, the business objects (Product, Order&amp;hellip;) available on the front-office are LazyArray instances. If your module relies on data available in the hook parameters or in the template, you may be concerned by this update.
+They used to be arrays with all the data available. This change has been introduced to load the needed properties of an object only when requested, and globally improve the performance of the front-office.</description>
+    </item>
+    
+    <item>
+      <title>Changes in PrestaShop 1.7.6</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.6/</guid>
+      <description>Notable changes in PrestaShop 1.7.6 CLDR The CLDR is a component responsible of displaying data such as the date &amp;amp; time, prices depending on a given language. It was reworked during several versions of PrestaShop 1.7, and will be enabled with 1.7.6. The previous one has been removed, and trying to use it will end to an exception.
+A new variable is now available in the Context when going through a controller:</description>
+    </item>
+    
+  </channel>
+</rss>

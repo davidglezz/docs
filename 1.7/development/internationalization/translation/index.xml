@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Translation on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/</link>
+    <description>Recent content in Translation on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/development/internationalization/translation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Translation Domains</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</guid>
+      <description>Translation Domains Sometimes wordings may seem vague when seen out of context. For example, &amp;ldquo;Delete&amp;rdquo;. Just like that, we can imagine what is it used for, but we don&amp;rsquo;t really have much information about it. What are we deleting? From a translator standpoint, this is very hard, because not only do we not know where it&amp;rsquo;s supposed to be used, but it could be used in several places, with different meanings.</description>
+    </item>
+    
+    <item>
+      <title>Native module translation</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</guid>
+      <description>Native module translation The module&amp;rsquo;s text strings are written in English, but you might want French, Spanish or Polish shop owners to use your module too. You therefore have to translate those strings into those languages, both the front office and the back office strings. Ideally, you should translate your module in all the languages that are installed on your shop. This could be a tedious task, but a whole system has been put in place in order to help you out.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sample modules on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/modules/sample_modules/</link>
+    <description>Recent content in Sample modules on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 May 2019 16:47:29 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/modules/sample_modules/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Grid and identifiable object form hooks usage example</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/</guid>
+      <description>Grid and identifiable object form hooks usage example  Introduction In this tutorial we are going to build module which extends customers list with one extra column which can be toggled. It can have two states - turned on or off. In customer creation and edit form we will add switch which will also manage the same state. By following this tutorial you will learn how to:
+ extend modern grids.</description>
+    </item>
+    
+  </channel>
+</rss>

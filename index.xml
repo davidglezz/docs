@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/</link>
+    <description>Recent content in Home on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/configuration/</guid>
+      <description>Configuration Data can be saved in the shop database without requiring a module specific table to be created.
+The table configuration contains a list of key =&amp;gt; value(s) properties which can be accessed from anywhere, including in a module. The Configuration class is the interface allowing each module developer to get or store data in this table.
+Store configuration data Configuration::updateValue(string $key, mixed $value);  $key will be the reference to your data to reuse later.</description>
+    </item>
+    
+    <item>
+      <title>DBQuery class</title>
+      <link>https://devdocs.prestashop.com/1.7/development/database/dbquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/database/dbquery/</guid>
+      <description>The DBQuery class The DBQuery class is a query builder which helps you create SQL queries. For instance:
+$sql = new DbQuery(); $sql-&amp;gt;select(&#39;*&#39;); $sql-&amp;gt;from(&#39;cms&#39;, &#39;c&#39;); $sql-&amp;gt;innerJoin(&#39;cms_lang&#39;, &#39;l&#39;, &#39;c.id_cms = l.id_cms AND l.id_lang = &#39;.(int)$id_lang); $sql-&amp;gt;where(&#39;c.active = 1&#39;); $sql-&amp;gt;orderBy(&#39;position&#39;); return Db::getInstance()-&amp;gt;executeS($sql);  Main methods  __toString()  Generate and get the query. build()  Generate and get the query (return a string). from(string $table, mixed $alias = null)  Set table for FROM clause.</description>
+    </item>
+    
+    <item>
+      <title>Guidelines and coding standards</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/guidelines/</guid>
+      <description>Guidelines and coding standards Compatibility PHP Code Your PHP code should be compatible with the following versions:
+ PrestaShop 1.7.0  ~ 1.7.3  : at least PHP 5.4 PrestaShop 1.7.4  : at least PHP 5.6  HTML / CSS / Javascript Your HTML/CSS/JS code should work with at least:
+ IE9+ Edge Firefox 45 Chrome 29.  Mobile-wise:
+ iOS 8.4 Android Browser 4.4  Standards General Use spaces for indentation in every language (PHP, HTML, CSS, etc.</description>
+    </item>
+    
+    <item>
+      <title>How to use Bulk actions in Grid?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-bulk-actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-bulk-actions/</guid>
+      <description>How to use Bulk actions in Grid? In addition to displaying data tables, Grid component also comes with a lot of additional functionality. One of it is Bulk actions.
+What is Bulk action? Bulk action is action (e.g. Delete, Change status &amp;amp; etc) that can be performed on multiple entries in table. This is a common task when using Grid (e.g. Delete multiple selected Suppliers with a single click).</description>
+    </item>
+    
+    <item>
+      <title>Internal and cross links</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/shortcodes/ref/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/shortcodes/ref/</guid>
+      <description>Internal and cross links Cross links To link to another page in the documentation, use ref:
+[This is a link to Configuration]({{&amp;lt; ref &amp;quot;1.7/basics/configuration.md&amp;quot; &amp;gt;}})  Rendered result:
+This is a link to Configuration
+ Don&amp;rsquo;t forget to put the link between double quotes.
+ Internal links To a link that points to a specific point in the current page, use relref:
+[This is a link to the first title]({{&amp;lt; relref &amp;quot;#cross-links&amp;quot; &amp;gt;}})  Rendered result:</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/introduction/</guid>
+      <description>Introduction Technical principles behind a module A PrestaShop module consists of a main PHP file with as many other PHP files as needed, as well as the necessary template (.tpl) files and assets (images, JavaScript, CSS, etc.) to display the module&amp;rsquo;s interface, whether to the customer (on the front office) or to the merchant (on the back office).
+Any PrestaShop module, once installed on an online shop, can interact with one or more &amp;ldquo;hooks&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Webservice lib</title>
+      <link>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/prestashop-webservice-lib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/prestashop-webservice-lib/</guid>
+      <description>Install the lib Pre-requisites  You need a server with mod_rewrite enabled You need the curl extension enabled in PHP  Installing with Composer If you are starting a new project you can init your composer project along with the dependency:
+composer init --require=&amp;quot;Prestashop/Prestashop-webservice-lib:dev-master&amp;quot; -n composer install  Or if you already have an existing project simply add the dependency:
+composer require &amp;quot;Prestashop/Prestashop-webservice-lib&amp;quot;  The library is not PSR compliant and has no namespace therefore you need to update your composer.</description>
+    </item>
+    
+    <item>
+      <title>Technical tools</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/sell/technical-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/sell/technical-tools/</guid>
+      <description>Technical Tools &amp;amp; Information Technical Tools: 3 tools to help you get off to a good start 1. The Validator The Validator ( https://validator.prestashop.com ) is a tool created to check if your module is technically compatible with the PrestaShop standards. You can:
+ upload a zip. or specify the URL of your GitHub repository (that has to be public).  The Validator then automatically creates a detailed report explaining what needs to be improved/changed in your module.</description>
+    </item>
+    
+    <item>
+      <title>Why write documentation</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/why/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/why/</guid>
+      <description>Why write technical documentation?  The best documentation is no documentation: code should be self-explanatory.
+All the lazy developers in history
+ Writing documentation is hard.
+We try to find excuses and rationalize and lie to ourselves so we can feel better about with the fact that we should be doing it, but it&amp;rsquo;s &amp;ldquo;too much work&amp;rdquo;.
+Here are two good reasons to try and convince you to start writing documentation, and help you while you help others, too:</description>
+    </item>
+    
+    <item>
+      <title>Adding module links in the back-office side menu</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/tabs/</guid>
+      <description>Adding module links in the back-office side menu  On the PrestaShop back office, the links on the side menu are linked to AdminControllers and ModuleAdminController classes. The first ones come from the PrestaShop Core, but the second ones are defined by the modules. If you want to add a link to your ModuleAdminControllers in the back office sidebar, this guide is for you.
+Tabs registration In order to register new links, open your main module class.</description>
+    </item>
+    
+    <item>
+      <title>CategoryChoiceTreeType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/category-choice-tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/category-choice-tree/</guid>
+      <description>CategoryChoiceTreeType CategoryChoiceTreeType is a child of MaterialChoiceTreeType, it extends parent options with options listed bellow. It is used to display category tree selection box and requires Javascript components.
+Type options    Option Type Default value Description     choices_tree array Array of all available categories Values to choose from in choices tree   choice_label string name An array key which should be targeted in provided choices list to get the label for input   choice_value string id_category An array key which should be targeted in provided choices list to get the value for input    Required Javascript components    Component Description     .</description>
+    </item>
+    
+    <item>
+      <title>Change product image</title>
+      <link>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/change_product_image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/webservice/tutorials/change_product_image/</guid>
+      <description>Adding a new image to a product To create a new image we are going to use the /images/products API. We won&amp;rsquo;t use the PrestaShopWebservice class here but a simple curl request.
+&amp;lt;?php $url = &#39;http://example.com&#39;; $key = &#39;YOUR_GENERATED_API_ACCESS_KEY&#39;; $psProductId = 19; $urlImage = $url.&#39;/api/images/products/&#39;.$psProductId.&#39;/&#39;; //Here you set the path to the image you need to upload $image_path = &#39;/path/to/the/image.jpg&#39;; $image_mime = &#39;image/jpg&#39;; $args[&#39;image&#39;] = new CurlFile($image_path, $image_mime); $ch = curl_init(); curl_setopt($ch, CURLOPT_HEADER, 1); curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); curl_setopt($ch, CURLINFO_HEADER_OUT, 1); curl_setopt($ch, CURLOPT_URL, $urlImage); curl_setopt($ch, CURLOPT_POST, 1); curl_setopt($ch, CURLOPT_USERPWD, $key.</description>
+    </item>
+    
+    <item>
+      <title>ChangePasswordType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/change-password/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/change-password/</guid>
+      <description>ChangePasswordType ChangePasswordType is used to create form for changing password and has a built-in new password generator which requires Javascript components.
+Required Javascript components    Component Description     ../admin-dev/themes/new-theme/js/components/form/change-password-control.js Generates random passwords, validates new password and it&amp;rsquo;s confirmation, displays error messages related to validation    Code example &amp;lt;?php // path/to/your/CustomType.php use PrestaShopBundle\Form\Admin\Type\ChangePasswordType; use Symfony\Component\Form\AbstractType; class CustomType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add(&#39;change_password&#39;, ChangePasswordType::class) ; } }  Then in Javascript you have to enable ChangePasswordControl component.</description>
+    </item>
+    
+    <item>
+      <title>Contribute using Docker</title>
+      <link>https://devdocs.prestashop.com/1.7/contribute/contribute_using_docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/contribute/contribute_using_docker/</guid>
+      <description>How to become a Core Contributor using Docker If you&amp;rsquo;re reading this, thank you! This means you&amp;rsquo;re interested on contributing to PrestaShop. You probably are a PrestaShop developer, and your use of the project is slighty different from ours. For instance, there are little differences between PrestaShop 1.7 (the release) and the branch 1.7 of PrestaShop in GitHub repository. This is because we create a release usable by everyone from our sources.</description>
+    </item>
+    
+    <item>
+      <title>CountryChoiceType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/country-choice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/country-choice/</guid>
+      <description>CountryChoiceType CountryChoiceType is a child of ChoiceType. It is used to display countries selection box and by default comes with a list of countries from PrestaShop database.
+Type options    Option Type Default value Description      choices array Array of all available countries Choice list that is passed to parent &amp;lsquo;choices&amp;rsquo;. Array should be formatted in name =&amp;gt; value pairs.     Required Javascript components None.</description>
+    </item>
+    
+    <item>
+      <title>DatePickerType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/date-picker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/date-picker/</guid>
+      <description> DatePickerType DatePickerType creates a field with a date picker. It uses Javascript, but doesn&amp;rsquo;t require any specific components, as it&amp;rsquo;s already enabled globally.
+Custom options None.
+Required Javascript components None.
+Code example &amp;lt;?php // path/to/your/CustomType.php use PrestaShopBundle\Form\Admin\Type\DatePickerType; use Symfony\Component\Form\AbstractType; use Symfony\Component\Form\FormBuilderInterface; class CustomType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add(&#39;date_from&#39;, DatePickerType::class) -&amp;gt;add(&#39;date_to&#39;, DatePickerType::class); } }  Preview example   DatePickerType rendered in form example   </description>
+    </item>
+    
+    <item>
+      <title>DateRangeType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/date-range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/date-range/</guid>
+      <description> DateRangeType DateRangeType combines two DatePickers to create date range picker. It uses Javascript, but doesn&amp;rsquo;t require any specific components, as it&amp;rsquo;s already enabled globally.
+Custom options None.
+Required Javascript components None.
+Code example &amp;lt;?php // path/to/your/CustomType.php use PrestaShopBundle\Form\Admin\Type\DateRangeType; use Symfony\Component\Form\AbstractType; use Symfony\Component\Form\FormBuilderInterface; class CustomType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { // this will render a date range picker with 2 DatePickerTypes // named &#39;date_add_from&#39; and &#39;date_add_to&#39; $builder-&amp;gt;add(&#39;date_add&#39;, DateRangeType::class); } }  Preview example   DateRangeType rendered in form example   </description>
+    </item>
+    
+    <item>
+      <title>Folder structure</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/module-file-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/module-file-structure/</guid>
+      <description>Module file structure A module is made of a lot of files, all stored in a folder that bears the same name as the module, that folder being in turn stored in the /modules folder at the root of the main PrestaShop folder: /modules/&amp;lt;name_of_the_module&amp;gt;/.
+Here are the possible files and folders for a PrestaShop 1.7 module:
+➜ module tree -L 3 . ├── config │ ├── services.yml │ ├── admin │ │ └── services.</description>
+    </item>
+    
+    <item>
+      <title>FormattedTextareaType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/formatted-textarea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/formatted-textarea/</guid>
+      <description>FormattedTextareaType Enables TinyMCE text editor on TextareaType.
+Type options    Option Type Default value Description     autoload bool true Whether to automatically load TinyMCE editor, or no.   limit int 21844 Limit of characters in text field. By default value equals to max size of UTF-8 content available in MySQL text column    Required Javascript components None.
+Code example &amp;lt;?php // path/to/your/CustomType.</description>
+    </item>
+    
+    <item>
+      <title>Front controllers</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/front-controllers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/front-controllers/</guid>
+      <description>Front controllers These class are accessible from the front-office and add features to the customers.
+Creating a front controller In order to have a front controller read by PrestaShop, these 3 rules have to be followed:
+ it is stored in the subfolder controllers/front/ of the module. in CamelCase, the class name follows this format: &amp;lt;ModuleName&amp;gt;&amp;lt;FileName&amp;gt;ModuleFrontController. it extends the class ModuleFrontController.  Minimum controller example Let&amp;rsquo;s say we want a controller responsible of payments validation in our module cheque.</description>
+    </item>
+    
+    <item>
+      <title>Front-Office Benchmark</title>
+      <link>https://devdocs.prestashop.com/1.7/scale/benchmark/front-office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/scale/benchmark/front-office/</guid>
+      <description>How to benchmark your PrestaShop Shop (Front-office) Benchmark methodology In order to benchmark the performances of your shop, you will use the siege testing tool. Try to always use the latest available version HERE.
+Setup siege configuration Create a txt file url.txt with various urls from your shop: (prepend with the domain of your shop)
+http://localhost:8080/ http://localhost:8080/panier http://localhost:8080/meilleures-ventes http://localhost:8080/nouveaux-produits http://localhost:8080/promotions http://localhost:8080/men/1-1-hummingbird-printed-t-shirt.html#/1-taille-s/8-couleur-blanc http://localhost:8080/accessories/3-mug-the-best-is-yet-to-come.html http://localhost:8080/3-clothes http://localhost:8080/6-accessories http://localhost:8080/3-clothes?q=Prix-€-28-34 http://localhost:8080/magasins http://localhost:8080/fournisseur http://localhost:8080/recherche?controller=search&amp;amp;s=sweater http://localhost:8080/2-accueil  Run the siege benchmark Then run a siege benchmark using this file:</description>
+    </item>
+    
+    <item>
+      <title>GeneratableTextType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/generatable-text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/generatable-text/</guid>
+      <description>GeneratableTextType Extends TextType with additional button which allows to generate random value for input.
+Type options    Option Type Default value Description     generated_value_length int 32 The length of value to be generated    Required Javascript components    Component Description     ../admin-dev/themes/new-theme/js/components/form/generatable-input.js Generates a random value for input.    Code example &amp;lt;?php // path/to/your/CustomType.php use PrestaShopBundle\Form\Admin\Type\GeneratableTextType; class CustomType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add(&#39;key&#39;, GeneratableTextType::class, [ &#39;generated_value_length&#39; =&amp;gt; 16, ]) ; } }  Then in Javascript you have to enable GeneratableInput component.</description>
+    </item>
+    
+    <item>
+      <title>How to use GitHub to report an issue</title>
+      <link>https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/</guid>
+      <description>How to use GitHub to report an issue PrestaShop is using GitHub to track bugs and issues. This is the best place to describe bugs you are witnessing on your PrestaShop installation, and have the developers try to fix it.
+Creating your account In order to participate, you need to create an account to use the bug tracker.
+Create your account here.
+Fill all fields and validate your account request, then follow the different steps.</description>
+    </item>
+    
+    <item>
+      <title>How to work with Grid Actions?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-grid-actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-grid-actions/</guid>
+      <description> Do you know how to do it? Please feel free to contribute to the docs!
+ </description>
+    </item>
+    
+    <item>
+      <title>IpAddressType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/ip-address/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/ip-address/</guid>
+      <description>IpAddressType Extends TextType with additional button which inserts current device ip address to input.
+Type options None.
+Required Javascript components    Component Description     ../admin-dev/themes/new-theme/js/maintenance-page/ip-input.js Inserts current device ip address to input.    Code example &amp;lt;?php // path/to/your/CustomType.php use PrestaShopBundle\Form\Admin\Type\IpAddressType; class CustomType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add( &#39;my_ip&#39;, IpAddressType::class ) ; } }  Then in Javascript you have to enable IpInput component.</description>
+    </item>
+    
+    <item>
+      <title>List of hooks</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/hooks/list-of-hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/hooks/list-of-hooks/</guid>
+      <description>List of hooks in PrestaShop 1.7 Update notes A couple of hooks were modified between 1.7.0.x and 1.7.1.x.
+ actionDeleteProductInCartAfter has been divided into two hooks:  actionObjectProductInCartDeleteBefore. actionObjectProductInCartDeleteAfter.  displayProductButtons has been renamed into displayProductAdditionalInfo.
+Don’t worry, we kept an alias :)  Full list  action&amp;lt;AdminControllerName&amp;gt;&amp;lt;Action&amp;gt;After Called after performing &amp;lt;Action&amp;gt; in any &amp;lt;AdminController&amp;gt;
+Located in: /classes/controller/AdminController.php
+Parameters:
+array( &#39;controller&#39; =&amp;gt; (AdminController), &#39;return&#39; =&amp;gt; (mixed) );  action&amp;lt;AdminControllerName&amp;gt;&amp;lt;Action&amp;gt;Before Called before performing &amp;lt;Action&amp;gt; in any &amp;lt;AdminController&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>MaterialChoiceTableType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/material-choice-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/material-choice-table/</guid>
+      <description>MaterialChoiceTableType MaterialChoiceTableType renders checkbox choices using table layout. It requires Javascript component to work as expected.
+Type options    Option Type Default value Description     expanded bool true Whether the table should be expanded by default or not   multiple bool true Whether to enable multiple checkboxes selection or no    Required Javascript components    Component Description     .</description>
+    </item>
+    
+    <item>
+      <title>MaterialChoiceTreeType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/material-choice-tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/material-choice-tree/</guid>
+      <description>MaterialChoiceTreeType MaterialChoiceTreeType renders checkbox choices using choices tree layout. Requires Javascript component to work as expected.
+Type options    Option Type Default value Description     choices_tree array [] The choices array to select from   choice_label string &amp;lsquo;name&amp;rsquo; The key in options array to target when getting label for checkbox   choice_value string &amp;lsquo;id&amp;rsquo; The key in options array to target when getting value for checkbox   choice_children string &amp;lsquo;children&amp;rsquo; The key in options array to target when getting the child for checkbox   multiple bool true Whether to enable multiple checkboxes selection or no   disabled_values array [] Array of ids to disable in choices tree    Required Javascript components    Component Description     .</description>
+    </item>
+    
+    <item>
+      <title>MaterialMultipleChoiceTableType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/material-multiple-choice-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/material-multiple-choice-table/</guid>
+      <description>MaterialMultipleChoiceTableType MaterialMultipleChoiceTableType renders checkbox choices using choices table layout. It is similar to MaterialChoiceTableType, but it allows using multiple checkboxes per row. Requires Javascript component to work as expected.
+Type options    Option Type Default value Description     multiple_choices array none Each item of array should contain a name which represents column header and valid options for ChoiceType including the &amp;lsquo;choices&amp;rsquo; array which values are rendered as column selections   choices array none The &amp;lsquo;choices&amp;rsquo; array for ChoiceType.</description>
+    </item>
+    
+    <item>
+      <title>MoneyWithSuffixType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/money-with-suffix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/money-with-suffix/</guid>
+      <description>MoneyWithSuffixType The MoneyWithSuffixType represents input with currency suffix.
+Type options    Option Type Default Description     currency string EUR Currency ISO code   suffix string Empty string Suffix text    Required Javascript components None.
+Code example Add MoneyWithSuffixType to your form.
+use Symfony\Component\Form\AbstractType; use PrestaShopBundle\Form\Admin\Type\MoneyWithSuffixType; class SomeType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add(&#39;price&#39;, MoneyWithSuffixType::class, [ &#39;currency&#39; =&amp;gt; &#39;EUR&#39;, &#39;suffix&#39; =&amp;gt; &#39;(tax excl.</description>
+    </item>
+    
+    <item>
+      <title>ObjectModel class</title>
+      <link>https://devdocs.prestashop.com/1.7/development/database/objectmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/database/objectmodel/</guid>
+      <description>The ObjectModel class When needing to dive deep, you have to use the ObjectModel class. This is the main object of PrestaShop’s object model. It can be overridden… with precaution.
+It is an Active Record kind of class (see: https://en.wikipedia.org/wiki/Active_record_pattern). The table attributes or view attributes of PrestaShop’s database are encapsulated in this class. Therefore, the class is tied to a database record. After the object has been instantiated, a new record is added to the database.</description>
+    </item>
+    
+    <item>
+      <title>ShopChoiceTreeType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/shop-choice-tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/shop-choice-tree/</guid>
+      <description>ShopChoiceTreeType The ShopChoiceTreeType is subtype of MaterialChoiceTreeType which is configured to be used for shop association input.
+Type options    Option Type Default Description     multiple bool true Whether multiple shops can be selected or not.    Required Javascript components    Component Description     admin-dev/themes/new-theme/js/components/form/choice-tree.js Manages interaction of choice tree    Code example Add ShopChoiceTreeType to your form.</description>
+    </item>
+    
+    <item>
+      <title>SwitchType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/switch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/switch/</guid>
+      <description> SwitchType The SwitchType displays a switch with Yes/No values.
+Type options    Option Type Default Description     choices array Choices with Yes/No values Choices for switch type   disabled bool false Whether Switch should be disabled or not    Required Javascript components None.
+Code example Add SwitchType to your form.
+use Symfony\Component\Form\AbstractType; use PrestaShopBundle\Form\Admin\Type\SwitchType; class SomeType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder-&amp;gt;add(&#39;switch&#39;, SwitchType::class, [ // Customized choices with ON/OFF instead of Yes/No &#39;choices&#39; =&amp;gt; [ &#39;ON&#39; =&amp;gt; true, &#39;OFF&#39; =&amp;gt; false, ], ]); } }  Preview example   SwitchType rendered in form   </description>
+    </item>
+    
+    <item>
+      <title>TextWithLengthCounterType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/text-with-length-counter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/text-with-length-counter/</guid>
+      <description>TextWithLengthCounterType The TextWithLengthCounterType represents text input with value length counter.
+Type options    Option Type Default Description     max_length int None, must be configured Max length of input value   position string before Configures position for counter. Available options are: before and after   input string text Configured input type text or textarea    Required Javascript components    Component Description     admin-dev/themes/new-theme/js/components/form/text-with-length-counter.</description>
+    </item>
+    
+    <item>
+      <title>TextWithUnitType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/text-with-unit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/text-with-unit/</guid>
+      <description> TextWithUnitType The TextWithUnitType represents text input with unit value (e.g. Kg, Cm &amp;amp; etc.).
+Type options    Option Type Default Description     unit string unit Type of unit (e.g. Kg, Cm &amp;amp; etc)    Required Javascript components None.
+Code example Add TextWithUnitType to your form and optionally you can configure unit for it.
+use Symfony\Component\Form\AbstractType; use PrestaShopBundle\Form\Admin\Type\TextWithUnitType; class SomeType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder-&amp;gt;add(&#39;weight&#39;, TextWithUnitType::class, [ &#39;unit&#39; =&amp;gt; &#39;kg&#39;, &#39;required&#39; =&amp;gt; false, &#39;empty_data&#39; =&amp;gt; &#39;0&#39;, ]) ; } }  Preview example   TextWithUnitType rendered in form   </description>
+    </item>
+    
+    <item>
+      <title>The Faceted Search component</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/faceted-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/faceted-search/</guid>
+      <description>The Faceted Search Architecture This document describes the faceted search architecture that is being implemented in PrestaShop 1.7.
+Please also read the extensive comments in classes/controller/ProductListingFrontControllerCore, as this document is only a high-level explanation.
+The target audience is anybody who wants to develop a well-integrated search module that replaces the way the PrestaShop core searches for products.
+At the moment this proof of concept works only on the CategoryController but it is easy to extend to the other product controllers (manufacturers, supplier&amp;hellip;).</description>
+    </item>
+    
+    <item>
+      <title>TranslatableType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/translatable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/translatable/</guid>
+      <description>TranslatableType The TranslatableType allows you to configure multilanguage input. This multilanguage behavior is provided on top of an existing input Type.
+Type options    Option Type Default Description     type string Symfony\Component\Form\Extension\Core\Type\TextType Type that you want to be translatable   options array Empty array Options for configured type   locales array Enabled shop locales (languages) Locales in which field can be translated    Required Javascript components    Component Description     admin-dev/themes/new-theme/js/components/translatable-input.</description>
+    </item>
+    
+    <item>
+      <title>YesAndNoChoiceType</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/yes-and-no-choice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/yes-and-no-choice/</guid>
+      <description> YesAndNoChoiceType The YesAndNoChoiceType represents select input with options Yes and No.
+Type options    Option Type Default Description     choices array array By default Yes/No choices are defined   required boolean false Whether field is required or not    Required Javascript components None.
+Preview example   YesAndNoChoiceType rendered in form   </description>
+    </item>
+    
+    <item>
+      <title>Back-Office Benchmark</title>
+      <link>https://devdocs.prestashop.com/1.7/scale/benchmark/back-office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/scale/benchmark/back-office/</guid>
+      <description>How to benchmark your PrestaShop Shop (Back-office) Benchmark methodology In order to benchmark the performances of the backoffice of your shop, you will use the Gatling testing tool.
+ Note: Backoffice benchmark is only possible starting with prestashop 1.7.4.0!
+If you want still want to run the test for version &amp;lt; 1.7.4.0, take a look at this PR: https://github.com/PrestaShop/PrestaShop/pull/8876
+ What is Gatling? Gatling is a stress tool. Development is currently focusing on HTTP support.</description>
+    </item>
+    
+    <item>
+      <title>Database structure</title>
+      <link>https://devdocs.prestashop.com/1.7/development/database/structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/database/structure/</guid>
+      <description>Maintaining the database Database structure definition Global definition The database structure of PrestaShop can be found in install/data/db_structure.sql (1.7.3.x releases example).
+It is used one time, during the installation of PrestaShop. It contains the structure of almost all tables. If a table needs to be added or modified, this the file you should open.
+Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables have been migrated to doctrine entities (i.</description>
+    </item>
+    
+    <item>
+      <title>How to work with the Search Form?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-search-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-search-form/</guid>
+      <description> Do you know how to do it? Please feel free to contribute to the docs!
+ </description>
+    </item>
+    
+    <item>
+      <title>Use hooks on modern pages</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/hooks/use-hooks-on-modern-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/hooks/use-hooks-on-modern-pages/</guid>
+      <description>Use hooks on modern pages You know you can already customize your PrestaShop store thanks to many hooks: the good news is that you can still use hooks like you did in the earlier versions of PrestaShop in modern pages.
+Starting from PrestaShop 1.7.3, you can access the modern Services Container into your modules and so on access powerful and customizable features available in Symfony:
+ Twig, the most popular templating engine; Swiftmailer, a feature-rich mailer; Doctrine ORM and Doctrine DBAL to manage your database; Filesystem and Finder libraries to manage all filesystem operations; Monolog for every logging operations; Serializer library for whom who need to manipulate Json and Xml formats&amp;hellip;  Of course, you also have access to every service used by the Core of PrestaShop.</description>
+    </item>
+    
+    <item>
+      <title>Widgets</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/widgets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/widgets/</guid>
+      <description>Widgets Widget is an advanced concept introduced on PrestaShop 1.7, extending hooks feature.
+Limitation of hooks In their basic use, a display hook will be shown at a specific place in the template. If a module wants to display the same additional content on several places, whatever the merchant chose, it still has to register and implement all the possible hooks.
+With widgets, module developers can display content everywhere the module is asked to do so.</description>
+    </item>
+    
+    <item>
+      <title>Adding a configuration page</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/adding-configuration-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/adding-configuration-page/</guid>
+      <description>Adding a configuration page Your module can get a &amp;ldquo;Configure&amp;rdquo; link in the back office module list, and therefore let the user change some settings. This &amp;ldquo;Configure&amp;rdquo; link appears with addition of the getContent() method to your main class. This is a standard PrestaShop method: its sole existence sends a message to the back office, saying &amp;ldquo;there&amp;rsquo;s a configuration page in this module, display the configuration link&amp;rdquo;.
+But having a getContent() public method in the MyModule object only makes the &amp;ldquo;Configure&amp;rdquo; link appear; it does not create the configuration page out of nowhere.</description>
+    </item>
+    
+    <item>
+      <title>Alter Back Office forms</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/forms/admin-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/forms/admin-forms/</guid>
+      <description>Alter forms on modern pages  One of the most common tasks for the PrestaShop developers is to alter the data and make it manageable for customers. In PrestaShop 1.6, a specific Form framework was created to help developers. In PrestaShop 1.7, the system has changed as we now rely on the Symfony Form component.
+Let&amp;rsquo;s see an example on how to add, populate, validate and persist a new form field in PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>How to extend a Grid with Javascript extensions?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/extend-grid-with-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/extend-grid-with-javascript/</guid>
+      <description>Extend a grid with Javascript extensions Introduction Javascript grid extensions supplement grid behavior and enhance user experience. For example, most grids contains SortingExtension which provides sorting by columns functionality, BulkActionCheckboxExtension which enables interactive selection of bulk actions and so on. But the fact is that most of grids will not necessarily need all features, so by using extensions we encourage to easily add or remove grid feature while loading only necessary javascript code.</description>
+    </item>
+    
+    <item>
+      <title>How to override Back Office views</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/</guid>
+      <description>How to override Back Office views  Since PrestaShop 1.7, the back office is being progressively migrated to the Symfony framework. Even though modules are no longer allowed to override a complete controller like before (it was highly discouraged anyway), we have introduced new powerful and more efficient ways to customize the Back Office.
+As part of this migration, PrestaShop is switching its templating engine from Smarty to Twig. Twig is very popular in the PHP/Symfony world, it&amp;rsquo;s well-documented and it&amp;rsquo;s also one of the most efficient engines out there.</description>
+    </item>
+    
+    <item>
+      <title>KPI block in Admin pages</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/kpi-blocks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/kpi-blocks/</guid>
+      <description>How to add a KPI block in admin pages  A KPI block (also called KPI row) is shown here:
+  KPI Block   You can follow these steps to easily add a KPI row to a modern page:
+ Define your KPI classes:  You can use one of existing KPI classes, from PrestaShop\PrestaShop\Adapter\Kpi namespace, You can create new classes - they must implement the PrestaShop\PrestaShop\Core\Kpi\KpiInterface  Define a KPI row factory service in src/PrestaShopBundle/Resources/config/services/core/kpi.</description>
+    </item>
+    
+    <item>
+      <title>Displaying content on the front office</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/displaying-content-in-front-office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/displaying-content-in-front-office/</guid>
+      <description>Displaying content on the front office As it is, the module does not do much. In order to display something on the front office, we have to add support for a few hooks. This is done by implementing the hooks&amp;rsquo; methods, and that was actually done in the install() method we wrote earlier, using the registerHook() method:
+public function install() { if (Shop::isFeatureActive()) { Shop::setContext(Shop::CONTEXT_ALL); } return parent::install() &amp;amp;&amp;amp; $this-&amp;gt;registerHook(&#39;leftColumn&#39;) &amp;amp;&amp;amp; $this-&amp;gt;registerHook(&#39;header&#39;) &amp;amp;&amp;amp; Configuration::updateValue(&#39;MYMODULE_NAME&#39;, &#39;my friend&#39;); }  As you can see, we make it so that the module is hooked to the &amp;ldquo;leftColumn&amp;rdquo; and &amp;ldquo;header&amp;rdquo; hooks.</description>
+    </item>
+    
+    <item>
+      <title>Doctrine</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/doctrine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/doctrine/</guid>
+      <description>Doctrine  From the 1.7.6 version of PrestaShop we integrate support of Doctrine services and entities for modules. Doctrine is a powerful ORM allowing you to manage your database data via objects. It offers an abstract layer allowing you to perform insert/update actions via a simple $entity-&amp;gt;setData(&#39;update&#39;) call. But you can also create your own repositories to fetch specific data via left join, add conditions and so on&amp;hellip;
+Doctrine is the default ORM integrated with Symfony which is why we added it for modules in legacy context.</description>
+    </item>
+    
+    <item>
+      <title>How to modify an existing Grid in a module?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/modify-grid-in-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/modify-grid-in-module/</guid>
+      <description>How to modify an existing Grid in a module? If you need to modify an existing Grid, like inverting two columns for instance, this is really easy to do it in a module thanks to the available hooks.
+Business use case In this tutorial, we will try to improve the user experience of the Customers listing Grid (this page will be available in 1.7.6).
+Thinking about it, we could improve the current grid to highlight business-driven information:</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/introduction/</guid>
+      <description>Fundamentals of PrestaShop Development PrestaShop was conceived so that third-party modules could easily build upon its foundations, making it an extremely customizable e-commerce software.
+PrestaShop’s customization is based on three possibilities:
+ Themes, Modules, Overriding.  Themes are explored in full in the Designer Guide.
+Modules and the override system are explored in this Developer Guide, starting with the “Concepts” section below. You can learn more about each in the following chapters:</description>
+    </item>
+    
+    <item>
+      <title>Enabling the Auto-Update</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/enabling-auto-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/enabling-auto-update/</guid>
+      <description>Enabling the Auto-Update Since PrestaShop 1.5, it is possible to have your module auto-update: once a new version is available, PrestaShop suggests an &amp;ldquo;Update&amp;rdquo; button to the user. Clicking this button will trigger a series of methods, each leading closer to the latest version of your module.
+In order to bring auto-update support to your module, you need three main things:
+ Clearly indicate the module&amp;rsquo;s version number in its constructor method: $this-&amp;gt;version = &#39;1.</description>
+    </item>
+    
+    <item>
+      <title>How to customize the Grid templates?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/customize-templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/customize-templates/</guid>
+      <description>The Grid component is highly extensible from a structural and data point of view, but sometimes you need to customize how a grid, a row or a specific column is rendered.
+For instance, let&amp;rsquo;s take a look at the Logs page of the PrestaShop Back Office. You can see that the &amp;ldquo;Employee&amp;rdquo; column have a specific rendering:
+  Logs grid of PrestaShop with specific employee Column   In this tutorial, we will learn how to customize the rendering of every part of a Grid:</description>
+    </item>
+    
+    <item>
+      <title>Overrides</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/overrides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/overrides/</guid>
+      <description>Overrides Overriding is a way to &amp;ldquo;override&amp;rdquo; class files and controller files. PrestaShop&amp;rsquo;s ingenious class auto-loading function makes the &amp;ldquo;switch&amp;rdquo; to other files fairly simple. Thanks to PrestaShop&amp;rsquo;s fully object-oriented code, you can rely on object inheritance to modify and add new behaviors, using the properties and methods of the various existing classes.
+Important note There are limitations and risks of using overrides. Keep them for your own shop.</description>
+    </item>
+    
+    <item>
+      <title>Module translation</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/module-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/module-translation/</guid>
+      <description>Module translation The module&amp;rsquo;s text strings are written in English, but you might want French, Spanish or Polish shop owners to use your module too. You therefore have to translate those strings into those languages, both the front office and the back office strings. Ideally, you should translate your module in all the languages that are installed on your shop. This could be a tedious task, but a whole system has been put in place in order to help you out.</description>
+    </item>
+    
+    <item>
+      <title>How to create a custom Grid Action?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-custom-grid-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-custom-grid-action/</guid>
+      <description> Do you know how to do it? Please feel free to contribute to the docs!
+ </description>
+    </item>
+    
+    <item>
+      <title>How to create a custom Column Type?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-custom-column-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-custom-column-type/</guid>
+      <description> Do you know how to do it? Please feel free to contribute to the docs!
+ </description>
+    </item>
+    
+    <item>
+      <title>BadgeColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/badge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/badge/</guid>
+      <description> BadgeColumn Type  This basic BadgeColumn displays a raw field data in Grid, associated with a badge.
+Available options    Properties Type Expected value     field string required Record field name which column displays.   badge_type string default: success Indicates which field of the row contains the image source. (Allowed values: success, info, danger, warning)    Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\BadgeColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $badgeColumn = new BadgeColumn(&#39;total_spent&#39;); $badgeColumn-&amp;gt;setName(&#39;Sales&#39;); $badgeColumn-&amp;gt;setOptions([ &#39;field&#39; =&amp;gt; &#39;total_spent&#39;, &#39;badge_type&#39; =&amp;gt; &#39;success&#39;, &#39;empty_value&#39; =&amp;gt; &#39;--&#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($badgeColumn);  </description>
+    </item>
+    
+    <item>
+      <title>CQRS - Commands and Queries</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/domain/cqrs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/domain/cqrs/</guid>
+      <description>CQRS - Commands and Queries What is CQRS? CQRS stands for Command Query Responsibility Segregation. In brief, the CQRS pattern suggests to separate &amp;ldquo;write&amp;rdquo; and &amp;ldquo;read&amp;rdquo; models, which it refers to as Commands and Queries. In a web application like a CMS, we perform either &amp;ldquo;read&amp;rdquo; operations which return information to the user or &amp;ldquo;write&amp;rdquo; operations which modify the data managed by the application.
+Why using CQRS in PrestaShop? During Back Office migration to Symfony, PrestaShop needs a way to access and alter data on the new Symfony pages without multiplying the sources of truth, and without accessing ObjectModel (e.</description>
+    </item>
+    
+    <item>
+      <title>Commands</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/commands/</guid>
+      <description>Commands  Since version 1.7 of PrestaShop, everyone have access to the PrestaShop console using the following instruction in a terminal:
+ ./bin/console # or ./app/console for PrestaShop &amp;lt; 1.7.3 
+Since v1.7.5, you can add and provide your own commands into the PrestaShop console using modules.
+Let&amp;rsquo;s see an example of a really common task when we usually use CRON scripts: you want to export your products into an XML file in order to import them into an another platform (a PIM or an ERP).</description>
+    </item>
+    
+    <item>
+      <title>DataColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/data/</guid>
+      <description> DataColumn Type  The most basic column is DataColumn. It is used to display raw field data in Grid.
+Available options    Properties Type Expected value     field string required Record field name which column displays.    Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\DataColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $dataColumn = new DataColumn(&#39;id_product&#39;); $dataColumn-&amp;gt;setName(&#39;ID&#39;); $dataColumn-&amp;gt;setOptions([ &#39;field&#39; =&amp;gt; &#39;id_product&#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($dataColumn);  </description>
+    </item>
+    
+    <item>
+      <title>DateTimeColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/datetime/</guid>
+      <description>DateTimeColumn Type  You can use this column type in your Grid to format datetime values. It is common to get datetime value (e.g. Created at, Updated at &amp;amp; etc.) from database and format them before displaying.
+Available options    Properties Type Expected value     field string required Record field name which column displays.   format string default: Y-m-d H:i:s Format to use when formatting datetime.</description>
+    </item>
+    
+    <item>
+      <title>Grid and identifiable object form hooks usage example</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/</guid>
+      <description>Grid and identifiable object form hooks usage example  Introduction In this tutorial we are going to build module which extends customers list with one extra column which can be toggled. It can have two states - turned on or off. In customer creation and edit form we will add switch which will also manage the same state. By following this tutorial you will learn how to:
+ extend modern grids.</description>
+    </item>
+    
+    <item>
+      <title>How to backup PrestaShop</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/backup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/backup/</guid>
+      <description>How to backup PrestaShop Before starting anything, you must think first about safety. Any modification made on a shop could break it, so you must make sure all your data has been backed up before going further. This basically implies saving two things: your files and your database.
+We will give you all the details you may need to run an upgrade, but we can’t be held responsible for any damage caused to your shop during the process.</description>
+    </item>
+    
+    <item>
+      <title>How to create an Empty state?</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-empty-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-empty-state/</guid>
+      <description>How to create an Empty state?  Grid component allows developer to configure Empty state to make empty grid look more appealing for user.
+Creating an Empty state By default, when Grid is empty user sees it as:
+  Empty Suppliers grid   Unfortunately, it&amp;rsquo;s not very engaging, so let&amp;rsquo;s create Empty state for it! There are a few steps you have to follow:
+ You have to create a template for it and put it in src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/EmptyState directory, so Grid component can locate it.</description>
+    </item>
+    
+    <item>
+      <title>How to edit a page on GitHub</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/how/edit-on-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/how/edit-on-github/</guid>
+      <description>How to edit a page on GitHub Editing a page on GitHub is the most stright-forward way of contributing content to PrestaShop DevDocs.
+ The good: you don&amp;rsquo;t need to have anything installed. The bad: even if GitHub provides a preview of your markdown code, you won&amp;rsquo;t be able to see exactly how it will look like on the site (for instance, shortcodes aren&amp;rsquo;t interpreted by the GitHub preview).  For this tutorial, you will need a GitHub account (free).</description>
+    </item>
+    
+    <item>
+      <title>How to execute tests</title>
+      <link>https://devdocs.prestashop.com/1.7/testing/how-to-launch-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/testing/how-to-launch-tests/</guid>
+      <description>How to execute the PrestaShop automatic test suite Executing Unit/integration test suites At least four test suites are available, testing different parts of PrestaShop:
+ Legacy tests: heritage from PrestaShop 1.6: mix of unit, integration and functional tests; Legacy controllers: added to help with the Symfony migration, ensures that old Back Office controllers are still runnable; Admin tests: specific to PrestaShop 1.7, tests src/Core and src/Adapter classes; Symfony specific tests: specific to PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>How to extend a layout in a theme from a module</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/extend-a-layout-from-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/extend-a-layout-from-module/</guid>
+      <description>How to extend a layout in a theme from a module Sometimes you may want to use the provided email theme but you would like to add some information or change the header/footer. One of the advantages of new theme layouts is that they use Twig so you can take advantage of its extension and blocks features.
+Layout {% extends &#39;@MailThemes/modern/core/order_conf.html.twig&#39; %} {% block content %} {{ parent() }} &amp;lt;table width=&amp;quot;100%&amp;quot;&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot; class=&amp;quot;titleblock&amp;quot; style=&amp;quot;border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; direction: ltr; font-size: 0px; padding: 0 50px; text-align: center; vertical-align: top;&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;font-family:Open sans, arial, sans-serif;font-size:14px;line-height:25px;text-align:left;color:#555454;&amp;quot;&amp;gt; {{ &#39;Thank you for purchasing this product on our store.</description>
+    </item>
+    
+    <item>
+      <title>ImageColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/image/</guid>
+      <description> ImageColumn Type  This column is used to display an image from a row. You need to specify which field of the row contains the image source.
+Available options    Properties Type Expected value     src_field string required Indicates which field of the row contains the image source    Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\ImageColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $imageColumn = new ImageColumn(&#39;flag&#39;); $imageColumn-&amp;gt;setName(&#39;Flag&#39;); $imageColumn-&amp;gt;setOptions([ &#39;src_field&#39; =&amp;gt; &#39;flag&#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($imageColumn);  </description>
+    </item>
+    
+    <item>
+      <title>LinkColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/link/</guid>
+      <description>LinkColumn Type  This LinkColumn displays a raw field data encapsulated in a link (very useful to add an edition link on a name for example).
+Available options    Properties Type Expected value     field string required Record field name which column displays.   route string required Route used to generated link url.   route_param_name string required Parameter name used by the route to generate the url.</description>
+    </item>
+    
+    <item>
+      <title>Setting up your local environment</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/setting-up-your-local-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/setting-up-your-local-environment/</guid>
+      <description>Setting up your local environment Now that you intend to building a theme for PrestaShop, you are better off keeping all your development work on your machine. The main advantage is that it makes it possible for you to entirely bypass the process of uploading your files on your online server in order to test your changes. Another advantage is that a local test environment enables you to test code without the risk of breaking your production store.</description>
+    </item>
+    
+    <item>
+      <title>System requirements for PrestaShop 1.7</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/</guid>
+      <description>.support-yes, .example-yes { background-color: #8ce48c; } .support-no, .example-no { background-color: #e89b9b; } .example-yes, .example-no { display: inline-block; width: 1.1rem; height: 1.1rem; margin-bottom: -2px; }  System requirements for PrestaShop 1.7 PrestaShop needs the following server configuration in order to run:
+ System: Unix, Linux or Windows. Web server: Apache Web Server 2.2 or any later version. PHP: We recommend PHP 7.1 or later. See the compatibility chart below for more details.</description>
+    </item>
+    
+    <item>
+      <title>Templates &amp; layouts</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/templates/templates-layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/templates/templates-layouts/</guid>
+      <description>Templates &amp;amp; layouts PrestaShop template file are based on the Smarty 3 template engine.
+All template files must be stored in the theme&amp;rsquo;s templates/ subfolder. For instance, the default theme has its template files in the following folder: /themes/classic/templates.
+Directory structure Templates are then split between various subfolders.
+ /_partials/ Code shared accross the whole site like header, footer or notifications. /catalog/ Product page, product/brand/supplier listing, search result and such.</description>
+    </item>
+    
+    <item>
+      <title>Templating with Twig</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/templating-with-twig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/templating-with-twig/</guid>
+      <description>Templating with Twig This is mostly the easy part. Legacy pages use Smarty while modern pages use Twig. These templating engines are actually similar in many ways.
+For instance, this is a legacy template:
+&amp;lt;span class=&amp;quot;employee_avatar_small&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;img&amp;quot; alt=&amp;quot;&amp;quot; src=&amp;quot;{$employee_image}&amp;quot; /&amp;gt; &amp;lt;/span&amp;gt; {$employee_name}  All of the legacy templates are located in the admin-dev/themes/default/template/controller folder
+ &amp;hellip; and here is a possible migration of it to Twig:
+&amp;lt;span class=&amp;quot;employee_avatar_small&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;img&amp;quot; alt=&amp;quot;{{ employee.</description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/distribution/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/distribution/testing/</guid>
+      <description>Testing What makes a theme valid When you&amp;rsquo;re trying to select a theme in the backoffice, PrestaShop will test if your theme is valid. It won&amp;rsquo;t install if the theme isn&amp;rsquo;t valid.
+A theme is valid if it contains some files and some configuration keys.
+Required files Here is the complete list of required files:
+ preview.png config/theme.yml assets/js/theme.js assets/css/theme.css templates/_partials/form-field.tpl templates/catalog/product.tpl templates/catalog/listing/product-list.tpl templates/checkout/cart.tpl templates/checkout/checkout.tpl templates/cms/category.tpl templates/cms/page.tpl templates/customer/address.tpl templates/customer/addresses.tpl templates/customer/guest-tracking.</description>
+    </item>
+    
+    <item>
+      <title>ToggleColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/toggle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/toggle/</guid>
+      <description>ToggleColumn Type  This ToggleColumn is used to display booleans, it will display an icon instead of the value. If user clicks on it, this triggers a toggle of the boolean value.
+Available options    Properties Type Expected value     field string required Record field name which column displays.   primary_field string required Record field name which column displays.   route string required Route used to generated link url.</description>
+    </item>
+    
+    <item>
+      <title>Translation Domains</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</guid>
+      <description>Translation Domains Sometimes wordings may seem vague when seen out of context. For example, &amp;ldquo;Delete&amp;rdquo;. Just like that, we can imagine what is it used for, but we don&amp;rsquo;t really have much information about it. What are we deleting? From a translator standpoint, this is very hard, because not only do we not know where it&amp;rsquo;s supposed to be used, but it could be used in several places, with different meanings.</description>
+    </item>
+    
+    <item>
+      <title>Understanding the &#34;src&#34; folder</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/understanding-src-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/understanding-src-folder/</guid>
+      <description>Understanding the &amp;ldquo;src&amp;rdquo; folder The main idea when doing the 1.7 release was to use Symfony as a replacement for our own PrestaShop framework.
+In &amp;ldquo;src&amp;rdquo; folder you&amp;rsquo;ll find 3 main folders with different purposes:
+ Core: the refactored classes or business logic extraction for PrestaShop 1.7; Adapter: the classes that still depends on legacy framework (Context, Dispatcher or constants for instance); PrestaShopBundle: the classes that acts as a glue between PrestaShop classes and Symfony  Core .</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/installation/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/installation/configuration/</guid>
+      <description>Configuring PrestaShop By default, PrestaShop is configured to provide a secure and stable environment to both the shop administrator and the customers.
+As a developer, there are several changes that you could and should bring to the default installation in order to help you code better, spot bugs faster, and generally make a great PrestaShop product.
+Disabling the cache and forcing Smarty compilation When your development has an impact on the front office, whether you are building a theme or simply a module which displays information to the customer, you should force the template file compilation and disable the cache, so as to always see the result of your changes directly.</description>
+    </item>
+    
+    <item>
+      <title>ActionColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/action/</guid>
+      <description>ActionColumn Type  This type of column allows to add actions to your Grid rows. The action target the corresponding row. For more info about possible actions see Actions reference.
+Available options    Properties Type Expected value     actions array default: null List of actions assigned to each row.    Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\ActionColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $actionColumn = new ActionColumn(&#39;actions&#39;); $actionColumn-&amp;gt;setName(&#39;Actions&#39;); $actionColumn-&amp;gt;setOptions([ &#39;actions&#39; =&amp;gt; [ -&amp;gt;add((new LinkRowAction(&#39;delete&#39;)) -&amp;gt;setIcon(&#39;delete&#39;) -&amp;gt;setOptions([ &#39;route&#39; =&amp;gt; &#39;admin_custom_route&#39;, &#39;route_param_name&#39; =&amp;gt; &#39;mailId&#39;, &#39;route_param_field&#39; =&amp;gt; &#39;id_mail&#39;, &#39;confirm_message&#39; =&amp;gt; &#39;Delete selected item?</description>
+    </item>
+    
+    <item>
+      <title>BulkActionColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/bulk-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/bulk-action/</guid>
+      <description> BulkActionColumn Type  This type of column allows to add bulk action checkboxes to your Grid. This only add the checkbox in the grid, you can then manage bulk actions via javascript.
+Available options    Properties Type Expected value     bulk_field string required: Record field name which will be used as bulk action checkbox value.    Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\BulkActionColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $bulkActionColumn = new BulkActionColumn(&#39;bulk_action&#39;); $bulkActionColumn-&amp;gt;setName(&#39;&#39;); // it is common set empty name for bulk action columns $bulkActionColumn-&amp;gt;setOptions([ &#39;bulk_field&#39; =&amp;gt; &#39;id_product&#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($bulkActionColumn);  </description>
+    </item>
+    
+    <item>
+      <title>CRUD Forms</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/forms/crud-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/forms/crud-forms/</guid>
+      <description>CRUD Forms Introduction In computer programming, CRUD is an acronym for the four basic functions of persistent storage: create, read, update, and delete.
+PrestaShop handles several logic objects, like Cart, Product, Order, Customer&amp;hellip; among many others. When such objects are stored using a unique identifier, we refer to them as identifiable objects.
+In the Back Office, most identifiable objects are managed using forms and page listings that follow the CRUD pattern.</description>
+    </item>
+    
+    <item>
+      <title>Data Transfer Objects</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/domain/data-transfer-objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/domain/data-transfer-objects/</guid>
+      <description>Data Transfer Objects PrestaShop is using Data Transfer Objects (or DTOs) in its codebase, in this section you learn how you can benefit from using DTOs as well.
+What is Data Transfer Object? Data Transfer Object is object (e.g. UserData) that contains data in a structured format. This means that DTO usually comes with getter methods or public properties for accessing it&amp;rsquo;s data. The main benefit of using DTOs is that you know what data it has.</description>
+    </item>
+    
+    <item>
+      <title>Head</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/templates/head/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/templates/head/</guid>
+      <description>Head The head part is very important in term of SEO and performances.
+Have look at StarterTheme and Classic head part to see real life examples.
+Assets PrestaShop 1.7 changed the way asset works and it means the way to it&amp;rsquo;s added inside the &amp;lt;head&amp;gt; tag of your page changed a bit too.
+There are 2 importants files to use:
+ _partials/stylesheets.tpl _partials/javascript.tpl  There 2 files are used to take full advantage of the new features of 1.</description>
+    </item>
+    
+    <item>
+      <title>How to add a layout in a theme from a module</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/add-a-layout-from-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/add-a-layout-from-module/</guid>
+      <description>How to add a layout in a theme from a module You can add your own mail layouts from your module, they will then be included during email generation. Each time you install a language or if you generate them via the back office your layout will be rendered, translated and exported in the appropriate folders.
+Let&amp;rsquo;s assume for this example you want to add your layout for both themes classic and modern.</description>
+    </item>
+    
+    <item>
+      <title>How to create your own tests</title>
+      <link>https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-tests/</guid>
+      <description>How to create your own tests Creating a Unit test Everything is explained in the PHPUnit 5.7 documentation.
+For unit tests, we strongly encourage you to base your test on the PHPUnit&amp;rsquo;s TestCase class only.
+For instance:
+namespace Tests\Unit\Foo; use PHPUnit\Framework\TestCase; class BarTest extends TestCase { /* ... */ }  Unit tests should be located into Unit folder and follow the same path as the tested class: if a class is located into src/Core/Foo/Baz, the unit test should be into tests/Unit/Core/Foo/Baz folder.</description>
+    </item>
+    
+    <item>
+      <title>How to edit a page on your computer</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/how/edit-on-your-computer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/how/edit-on-your-computer/</guid>
+      <description>How to edit a page on your computer using Git Running a local copy of DevDocs on your computer is the best way to work on this project. Even though it requires a little extra work to set up, you will gain the ability to preview your changes almost instantly, as well as being able to introduce more than one change at a time.
+Prerequisites To run a local DevDocs install on your system, you will need:</description>
+    </item>
+    
+    <item>
+      <title>How to migrate to PrestaShop 1.7</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/migration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/migration/</guid>
+      <description>How to migrate to PrestaShop 1.7 Manual migration - Process details We will use the ETL (Extract - Transform - Load) process to complete a migration, a concept usually applied to data warehouses.
+The database structure may change with each new release of PrestaShop, but major versions may also imply features being replaced, preventing a shop to be smoothly upgraded in some cases. For these shops, a migration is a solution to be able to keep up with new releases.</description>
+    </item>
+    
+    <item>
+      <title>PositionColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/position/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/position/</guid>
+      <description>PositionColumn Type  This type of columns allows you to define rows position using a drag and drop feature. Besides this column definition you need to use our javascript PositionExtension and prepare a route to manage the positions update. To help you create this controller you can use our PositionUpdater component.
+Available options    Properties Type Expected value     id_field string required Record field containing its id.</description>
+    </item>
+    
+    <item>
+      <title>Settings Forms</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/forms/settings-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/forms/settings-forms/</guid>
+      <description>Settings Forms Introduction In PrestaShop, there are a lots of settings forms that require a unified way to handle of them. To move the settings creation and update out of controllers the following components are being used:
+ Form Data Provider - responsible for options data retrieval and saving the data. Form Handler - responsible for building the form.  Form Data Providers In order to load existing data into the form (when editing, for instance) and save the form data (when the form is submitted), you need to create and register a Form Data Provider.</description>
+    </item>
+    
+    <item>
+      <title>Tooling prerequisites for theme designers</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/tools-for-theme-designers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/tools-for-theme-designers/</guid>
+      <description>Tooling prerequisites for theme designers The way 1.7 themes are created is significantly different from the way they were with PrestaShop 1.6. By taking the freedom to rewrite the way themes work according to the latest best-practices, we chose to also work with modern tools. These tools are widely accepted as best-of-breed in the current web development; hence, learning to use them will not only make you more productive in PrestaShop development, but more importantly in web development in general.</description>
+    </item>
+    
+    <item>
+      <title>CQRS usage in forms</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/forms/cqrs-usage-in-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/forms/cqrs-usage-in-forms/</guid>
+      <description>CQRS usage in forms This article assumes that you are already familiar with CQRS and CRUD forms, as this topic only demonstrates the usage of the CQRS approach.
+ The basics To use CQRS you need to:
+ Inject a CommandBus or QueryBus instance using your class constructor. Create an instance of the desired Command or Query. Call your command using the CommandBus or QueryBus.  Usage examples Using Commands In this example, we will be working with edition in a Contact CRUD Form.</description>
+    </item>
+    
+    <item>
+      <title>Domain exceptions</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/domain/domain-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/domain/domain-exceptions/</guid>
+      <description>Domain exceptions With introduction of domain driven design in PrestaShop, a new way of error handling in the code is seeing the daylight. The code in PrestaShop\PrestaShop\Core\Domain namespace started to utilize domain exceptions.
+What is a domain exception A domain exception is an exception, that is thrown in application&amp;rsquo;s domain level, which is specific to that particular domain.
+ Let&amp;rsquo;s see how domain exceptions look like in the code. For this example, let&amp;rsquo;s look at Category domain:</description>
+    </item>
+    
+    <item>
+      <title>How to add an email theme from a module</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/add-a-theme-from-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/add-a-theme-from-module/</guid>
+      <description>How to add an email theme from a module Now, what if you want to add a whole new email theme? Of course one possibility is to add a new theme folder in mails/themes/ but it&amp;rsquo;s not the most convenient if you want to install/uninstall it easily and quickly, so let&amp;rsquo;s integrate the theme in a module.
+Just like we did to add a layout from a module we are going to use the actionListMailThemes hook, except this time we are going to add a whole email theme.</description>
+    </item>
+    
+    <item>
+      <title>How to upgrade PrestaShop</title>
+      <link>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/upgrade/</guid>
+      <description>How to upgrade PrestaShop Important
+Do not go further if you haven’t made a backup of your shop.
+Rollback will be the only way to go back if something does not go well, and this requires a backup.
+Learn how to backup your shop
+ This chapter describes several ways to complete an upgrade of PrestaShop.
+Manual upgrade – Process details This guide gives you the full control on the process.</description>
+    </item>
+    
+    <item>
+      <title>Notifications</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/templates/notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/templates/notifications/</guid>
+      <description>Notifications Throughout the whole front office, the customer can receive notification messages from PrestaShop, to inform about successes or errors for instance. Your theme can also send notifications when certain events occur.
+The notification messages are not hard-coded in the template files, but are sent from the controller, so that you have consistency in case you update/change your theme. Thus, this way there is a better chance that all notification messages are already translated into your language!</description>
+    </item>
+    
+    <item>
+      <title>Starter Theme</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/starter-theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/starter-theme/</guid>
+      <description>Starter Theme This project is not maintained anymore by the core team.
+ PrestaShop 1.7 introduces a new way for designers to create their theme from scratch: the Starter Theme. The default theme for PS 1.7 is based on the Starter Theme.
+For pretty much every CMS, the default theme is used as a framework to build custom theme: designers have to rework the default theme and reshape it into what they want to display.</description>
+    </item>
+    
+    <item>
+      <title>Writing Markdown</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/how/writing-markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/how/writing-markdown/</guid>
+      <description>Writing Markdown This site was created using the wonderful Hugo static site generator, but the content itself is written using Markdown.
+Don&amp;rsquo;t worry, you don&amp;rsquo;t need to know anything about Hugo or the Go language to write documentation. The Markdown syntax is basically plain text with some simple added syntax for styling.
+If you don&amp;rsquo;t know Markdown yet, have a look at this quick Markdown guide from GitHub.
+Extended features: Shortcodes Hugo uses special short codes for many things.</description>
+    </item>
+    
+    <item>
+      <title>Controller and Routing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/</guid>
+      <description>Controller and Routing Modern/Symfony Controllers Read the Symfony documentation on Controllers and Routing.
+ Every migrated page needs one or more Controllers: if you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it.
+New controllers should be placed in the src/PrestaShopBundle/Controller/Admin folder. Starting on 1.7.3, controllers are being progressively organized in sub-folders following the Back Office menu.</description>
+    </item>
+    
+    <item>
+      <title>Hooks</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/hooks/</guid>
+      <description>How to migrate hooks Hooks are the most important feature for the PrestaShop developers because they allow them to improve PrestaShop by adding code or content in multiple points of the application. For Symfony developers, you can see that as Events on steroids. To keep some degree of compatibility with 1.6 or 1.7 (pre-Symfony migration) modules, we need to ensure that hooks are still available, invoked and/or rendered at the right place.</description>
+    </item>
+    
+    <item>
+      <title>How to add layout variables from a module</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/add-layout-variables-from-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/add-layout-variables-from-module/</guid>
+      <description>How to add layout variables from a module You can add your own layout variables which may be used in you custom template. To demonstrate this feature we assume you already have added you custom layout to a theme (see How to add a layout in a theme from a module). Here is an example of a layout using a customMessage variable.
+Layout {# modules/my_email_theme_module/mails/layout/customizable_modern_layout.html.twig #} {% extends &#39;@MailThemes/modern/components/layout.html.twig&#39; %} {% block content %} &amp;lt;table width=&amp;quot;100%&amp;quot;&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot; class=&amp;quot;titleblock&amp;quot;&amp;gt; &amp;lt;font size=&amp;quot;2&amp;quot; face=&amp;quot;{{ languageDefaultFont }}Open-sans, sans-serif&amp;quot; color=&amp;quot;#555454&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;title&amp;quot;&amp;gt;{{ &#39;This is an example mail template from my module for modern theme&#39;|trans({}, &#39;EmailsBody&#39;, locale)|raw }}&amp;lt;/span&amp;gt; &amp;lt;/font&amp;gt; &amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot; class=&amp;quot;titleblock&amp;quot;&amp;gt; &amp;lt;font size=&amp;quot;2&amp;quot; face=&amp;quot;{{ languageDefaultFont }}Open-sans, sans-serif&amp;quot; color=&amp;quot;#555454&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;subtitle&amp;quot;&amp;gt;{{ customMessage }}&amp;lt;/span&amp;gt; &amp;lt;/font&amp;gt; &amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td class=&amp;quot;space_footer&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/table&amp;gt; {% endblock %}  Using the hook Now you need to add your variables for this specific layout, in order to do so you will use the actionBuildMailLayoutVariables hook.</description>
+    </item>
+    
+    <item>
+      <title>Listing pages</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/templates/listing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/templates/listing/</guid>
+      <description>Listing pages Your catalog is mostly 2 things: a list of products and a detailed product page.
+This section covers the listing pages, which includes: category, search result, products per brand, best seller list, new product list and so on.
+In order to reduce code duplication, the only necessary template is the file catalog/listing/product-list.tpl.
+Extending product-list template We already covered how PrestaShop chooses the right template to use so we know that the category template extends the product-list template.</description>
+    </item>
+    
+    <item>
+      <title>Theme organization</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/theme-organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/theme-organization/</guid>
+      <description>Theme organization Directory structure A PrestaShop theme is a set of files which you can edit in order to change the look of your online shop.
+Here are a few important tidbits:
+ All themes have their files located in the /themes folder, at the root of PrestaShop&amp;rsquo;s folder. Each theme has its own sub-folder, in the main themes folder. Each theme is made of template files (.tpl), image files (.</description>
+    </item>
+    
+    <item>
+      <title>Grid / CRUD</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/grid-crud-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/grid-crud-page/</guid>
+      <description>How to migrate a Grid/CRUD page In PrestaShop&amp;rsquo;s Back Office, most of the pages are organized the same way.
+We can already see 2 categories of pages that represent almost 90% of back office:
+ Configuration pages: forms that alter the configuration; CRUD pages: pages with a filterable/searchable table of data and some options to access a form of creation/edition;  CRUD pages provide a lot of features.
+Access to a lot of data, ordered by column: this data can be simple (text) or more complex (display a thumbnail).</description>
+    </item>
+    
+    <item>
+      <title>How to apply a transformation from a module</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/apply-transformation-from-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/apply-transformation-from-module/</guid>
+      <description>How to apply a transformation from a module The TransformationInterface is a powerful and handy way to modify your template&amp;rsquo;s design easily. Here are the interface details:
+namespace PrestaShop\PrestaShop\Core\MailTemplate\Transformation; interface TransformationInterface { /** * @param string $templateContent * @param array $templateVariables * * @return string */ public function apply($templateContent, array $templateVariables); /** * Returns the type of templates this transformation is associated with, * either html or txt, so that the renderer knows if it has to be applied * or not * * @return string */ public function getType(); /** * @param LanguageInterface $language * * @return $this */ public function setLanguage(LanguageInterface $language); }  The apply method is the most important, it receives the rendered layout as a string, you can then perform replacement or even DOM manipulation as long as your return the whole template as a string (if you don&amp;rsquo;t want modify it simply return the string unchanged).</description>
+    </item>
+    
+    <item>
+      <title>Theme.yml</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/theme-yml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/theme-yml/</guid>
+      <description>Theme.yml The theme&amp;rsquo;s theme.yml file defines all of the theme&amp;rsquo;s configuration and meta information, such as its version number, layouts, compatibility range, hook configuration, etc.
+Theme description The theme&amp;rsquo;s name MUST match its directory name. For instance, if the theme is named &amp;ldquo;My Awesome Theme&amp;rdquo; and its &amp;lsquo;name&amp;rsquo; value is set to &amp;ldquo;my-awesome-theme&amp;rdquo;, then the folder MUST be /my-awesome-theme .
+Users will be able to choose the layout for each page from the theme&amp;rsquo;s settings page.</description>
+    </item>
+    
+    <item>
+      <title>Cleaning up</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/clean-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/clean-up/</guid>
+      <description> Cleaning up Once everything is migrated, refactored, extracted to specific classes and working like a charm, it&amp;rsquo;s time to remove the old, migrated parts:
+ Delete the old controller. Delete the old templates (delete the admin-dev/themes/default/template/controller/{name} folder. Delete the related &amp;ldquo;legacy tests&amp;rdquo;.  </description>
+    </item>
+    
+    <item>
+      <title>EmployeeNameWithAvatarColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/employee-name-with-avatar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/employee-name-with-avatar/</guid>
+      <description> EmployeeNameWithAvatarColumn Type  It is special type of column that allows you to add employee name with avatar column to your Grid. You can see how it looks be default:
+  Employee name with avatar column   Available options    Properties Type Expected value     field string required Employee&amp;rsquo;s name field.    field type: string required
+Employee&amp;rsquo;s name field.
+Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\Employee\EmployeeNameWithAvatarColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $employeeColumn = new EmployeeNameWithAvatarColumn(&#39;employee&#39;); $employeeColumn-&amp;gt;setName(&#39;Employee&#39;); $employeeColumn-&amp;gt;setOptions([ &#39;field&#39; =&amp;gt; &#39;employee&#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($employeeColumn);  </description>
+    </item>
+    
+    <item>
+      <title>Register a new hook</title>
+      <link>https://devdocs.prestashop.com/1.7/development/register-new-hook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/register-new-hook/</guid>
+      <description>How to register a new Hook in PrestaShop This is basically three steps:
+ dispatch the hook in the code (in templates or PHP classes/files); update the hooks xml definition of Installer; update the hooks table for &amp;ldquo;Auto Upgrade&amp;rdquo; system;  Dispatching hooks Most of the time, you will dispatch the hook using an instance of HookDispatcher. It can be retrieved from the service container and/or injected, as it&amp;rsquo;s done for example in Form Handlers:</description>
+    </item>
+    
+    <item>
+      <title>How to compile assets</title>
+      <link>https://devdocs.prestashop.com/1.7/development/compile-assets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/compile-assets/</guid>
+      <description>How to compile assets Some components in PrestaShop, like Javascript or SCSS files, need to be compiled to be usable.
+Requirements We use Webpack to compile assets. You only need NodeJS 8.x (get it here), NPM will take care of it all.
+Assets that need to be compiled  Back Office
+ Default theme  SASS files
+Located in admin-dev/themes/default/sass  New theme  SCSS files
+Located in admin-dev/themes/new-theme/scss JS files</description>
+    </item>
+    
+    <item>
+      <title>How to send e-mails</title>
+      <link>https://devdocs.prestashop.com/1.7/development/mail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/mail/</guid>
+      <description>How to send e-mails Using the Mail::send() method The Mail core class extends ObjectModel
+ This example is assuming you are using in a controller named mycontroller of a module named mymodule
+ class mymodulemycontrollerModuleFrontController extends ModuleFrontController { public function initContent() { parent::initContent(); Mail::Send( (int)(Configuration::get(&#39;PS_LANG_DEFAULT&#39;)), // defaut language id &#39;contact&#39;, // email template file to be use &#39; Module Installation&#39;, // email subject array( &#39;{email}&#39; =&amp;gt; Configuration::get(&#39;PS_SHOP_EMAIL&#39;), // sender email address &#39;{message}&#39; =&amp;gt; &#39;Hello world&#39; // email content ), Configuration::get(&#39;PS_SHOP_EMAIL&#39;), // receiver email address NULL, //receiver name NULL, //from email address NULL //from name ); } }  Prestashop will use the Shop Configuration to decide if use smtp connection or php mail function so check it out on backoffice or in app/config/parameter.</description>
+    </item>
+    
+    <item>
+      <title>SeverityLevelColumn reference</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/severity-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/severity-level/</guid>
+      <description> SeverityLevelColumn Type  Use this column to display severity level in your Grid.
+Available options    Properties Type Expected value     field string required Record field name which is used as severity level.   with_message bool default: false Whether to show severity level message in addition with numeric severity level value.    Example usage use PrestaShop\PrestaShop\Core\Grid\Column\Type\Status\SeverityLevelColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $severityColumn = new SeverityLevelColumn(&#39;severity&#39;); $severityColumn-&amp;gt;setName(&#39;Severity (1-4)&#39;); $severityColumn-&amp;gt;setOptions([ &#39;field&#39; =&amp;gt; &#39;severity&#39;, &#39;with_message&#39; =&amp;gt; true, // enable severity messages ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($severityColumn);  </description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</guid>
+      <description>Testing You are encouraged to add both unit and functional tests for every new class you have created.
+You must add a smoke test (also called &amp;ldquo;survival&amp;rdquo;) for every new page you migrate.
+Smoke testing A smoke test is a really simple and basic test that ensure the page will load with the right HTTP code. This won&amp;rsquo;t ensure the page will works as expected but if the test fails, this ensure the page is not functional.</description>
+    </item>
+    
+    <item>
+      <title>Callout</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/shortcodes/callout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/shortcodes/callout/</guid>
+      <description>Callout This shortcode allows you to display a block inside your document to make some information stand out.
+As with all shortcodes, keep in mind that headers inside won&amp;rsquo;t appear in the article&amp;rsquo;s table of contents.
+ {{% callout %}} #### This is a callout This is a very important block of text. Also, notice how the title doesn&#39;t appear in the table of contents. {{% /callout %}}  Rendered result:</description>
+    </item>
+    
+    <item>
+      <title>Changes in PrestaShop 1.7.5</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.5/</guid>
+      <description>Notable changes in PrestaShop 1.7.5 LazyArrays Starting with PrestaShop 1.7.5, the business objects (Product, Order&amp;hellip;) available on the front-office are LazyArray instances. If your module relies on data available in the hook parameters or in the template, you may be concerned by this update.
+They used to be arrays with all the data available. This change has been introduced to load the needed properties of an object only when requested, and globally improve the performance of the front-office.</description>
+    </item>
+    
+    <item>
+      <title>Changes in PrestaShop 1.7.6</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.6/</guid>
+      <description>Notable changes in PrestaShop 1.7.6 CLDR The CLDR is a component responsible of displaying data such as the date &amp;amp; time, prices depending on a given language. It was reworked during several versions of PrestaShop 1.7, and will be enabled with 1.7.6. The previous one has been removed, and trying to use it will end to an exception.
+A new variable is now available in the Context when going through a controller:</description>
+    </item>
+    
+    <item>
+      <title>Contribution guidelines for modules</title>
+      <link>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/project-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/project-modules/</guid>
+      <description>Contribution guidelines for modules This document describes general guidelines for contributing to PrestaShop modules hosted on GitHub.
+How to contribute Contributors wishing to edit a module&amp;rsquo;s files should follow the following process:
+ Create your GitHub account, if you do not have one already. Fork the project to your GitHub account. Clone your fork to your local machine in the /modules directory of your PrestaShop installation. Create a branch in your local clone of the module for your changes.</description>
+    </item>
+    
+    <item>
+      <title>Exporting your theme</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/distribution/exporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/distribution/exporting/</guid>
+      <description>Exporting your theme Creating a valid zip file There is no longer any theme data in the database with PrestaShop 1.7. Hence a theme is installed as soon as it&amp;rsquo;s on the disk.
+If you want to theme to appears in the backoffice, it&amp;rsquo;s simply have to contain a config/theme.yml file. This will only display it, if you want to select it as your active theme, it has to be valid.</description>
+    </item>
+    
+    <item>
+      <title>Function definition</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/shortcodes/funcdef/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/shortcodes/funcdef/</guid>
+      <description>Function definition To render a list of function definitions, use funcdef in combination with Markdown definition list:
+{{% funcdef %}} __construct($id = NULL, $id_lang = NULL) : Build object. add($autodate = true, $nullValues = false) : Save current object to database (add or update). {{% /funcdef %}}  Rendered result:
+ __construct($id = NULL, $id_lang = NULL)  Build object. add($autodate = true, $nullValues = false)  Save current object to database (add or update).</description>
+    </item>
+    
+    <item>
+      <title>Good practices for developing modules</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/creation/good-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/creation/good-practices/</guid>
+      <description>Good practices for developing modules DOs and DON&amp;rsquo;Ts Do  Add a link to your documentation included in your ZIP File and to your support page on Addons in the module interface. Follow our Coding Standards Create your own database tables, do not alter PrestaShop&amp;rsquo;s. Develop your module in English, then use PrestaShop translation system to translate your module. Go through directories using PrestaShop constants like: _PS_CONFIG_DIR_ . &#39;/config.inc.php&#39;  Don&amp;rsquo;t  Don&amp;rsquo;t insert external links into your module code or module documentation.</description>
+    </item>
+    
+    <item>
+      <title>Legacy Controllers</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/legacy/legacy-controllers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/legacy/legacy-controllers/</guid>
+      <description> Legacy Controllers Legacy controllers are based on PrestaShop&amp;rsquo;s custom framework and go a long way back. All front controllers and all Admin controllers that haven&amp;rsquo;t been migrated to Symfony yet are based on this.
+Execution flow Legacy controllers work best when a Controller performs a single action, for example, render a page. The process has been divided in several methods, which simplifies customization via method override.
+  Execution flow of legacy controllers   </description>
+    </item>
+    
+    <item>
+      <title>Migrating from PrestaShop 1.6</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/migration-from-16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/migration-from-16/</guid>
+      <description>Migrating from PrestaShop 1.6 PrestaShop 1.7 introduces a totally reworked theme system from version 1.6, with the goal of making PrestaShop upgrades easier, and making it easier and faster to create a brand new theme.
+The huge change to the theme system means that there is no easy way to migrate your PrestaShop 1.6 theme to PrestaShop 1.7.
+When using the automatic upgrade from PrestaShop 1.6 to 1.7, your theme will be switched to the new default theme, called &amp;ldquo;Classic&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Native module translation</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</guid>
+      <description>Native module translation The module&amp;rsquo;s text strings are written in English, but you might want French, Spanish or Polish shop owners to use your module too. You therefore have to translate those strings into those languages, both the front office and the back office strings. Ideally, you should translate your module in all the languages that are installed on your shop. This could be a tedious task, but a whole system has been put in place in order to help you out.</description>
+    </item>
+    
+    <item>
+      <title>Note block</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/shortcodes/notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/shortcodes/notice/</guid>
+      <description>Notes / tip block You can add notice blocks to make some information stand out:
+Note {{% notice note %}} This is something you may want to know. {{% /notice %}}  Renders to:
+This is something you may want to know.
+ Tip {{% notice tip %}} Everything will be fine, trust me. {{% /notice %}}  Renders to:
+Everything will be fine, trust me.
+ Info {{% notice info %}} This is pretty important, you should pay attention.</description>
+    </item>
+    
+    <item>
+      <title>Optimize your PrestaShop</title>
+      <link>https://devdocs.prestashop.com/1.7/scale/optimizations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/scale/optimizations/</guid>
+      <description>Optimize your PrestaShop performance Before making any change on your PrestaShop instance, it is highly recommended to perform some benchmarks.
+The idea behind this is to know what your baseline performance is, so that you can make sure that your changes are increasing your shop&amp;rsquo;s performance and not the other way around.
+If you&amp;rsquo;ve done no benchmark beforehand, there is no way to ensure you did not decrease your performances in the end.</description>
+    </item>
+    
+    <item>
+      <title>Overriding modules</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/overriding-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/overriding-modules/</guid>
+      <description>Overriding modules When you write a theme, you often need to override the templates and assets coming from a module so that they match your theme&amp;rsquo;s specific markup needs. Themes can override modules&amp;rsquo; assets (CSS and JavaScript only) by placing the corresponding file at a specific location.
+With PrestaShop 1.7, all module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory). Every PS 1.7 module developer should be aware of this change (introduced with PR 5020: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Parent/child theme</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/template-inheritance/parent-child-feature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/template-inheritance/parent-child-feature/</guid>
+      <description>Parent/child theme PrestaShop 1.7 relies a lot on template inheritance in order to create the most consistent theme possible while heavily reducing the amount of duplicated code.
+We took it even further introducing the Parent Child theme feature. The point to is to avoid modifying the main theme so you can update it!
+This feature is only useful if you want to slightly modify a theme (to add a block for example).</description>
+    </item>
+    
+    <item>
+      <title>RTL support</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/rtl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/rtl/</guid>
+      <description>RTL support PrestaShop supports RTL (Right-to-left) themes natively.
+RTL stylesheets There are two ways of customizing your theme for RTL: either by adding an override file that is only loaded for RTL languages, or by using completely different version of the theme&amp;rsquo;s stylesheets.
+CSS override file PrestaShop will try to load a css file named rtl.css after your theme&amp;rsquo;s ones when displayed in an RTL language. You can use this file to place any style override you need for RTL.</description>
+    </item>
+    
+    <item>
+      <title>Right-To-Left languages</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/rtl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/rtl/</guid>
+      <description>Right-to-Left languages PrestaShop supports Right-to-Left (RTL) languages natively, both in the Back Office and the Front Office. It can automatically transform themes to make them compatible with RTL languages.
+Any Front Office theme can be transformed automatically by PrestaShop. Read &amp;ldquo;RTL support&amp;rdquo; in the Themes section to learn more about this system.
+Back Office support The Back Office uses the same &amp;ldquo;theme-flipping&amp;rdquo; system as the Front Office feature. While for Front Office themes the transformation procedure must be triggered manually, in the BO this is performed automatically whenever an RTL language is activated on the shop, either by installing an RTL language or by setting up a language as RTL via edit in the BO.</description>
+    </item>
+    
+    <item>
+      <title>Smarty helper functions</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/smarty-helpers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/smarty-helpers/</guid>
+      <description>Helpers: functions and modifiers {url} PrestaShop 1.7 introduces a new Smarty helper to generate URLs. This will take care of SSL, domain name, virtual and physical base URI, parameters concatenation, and of course URL rewritting.
+{url} uses the Link class internally.
+Please see the $urls dataset to find already regenerated urls (such as home, cart, login and so on).
+ An instance of the Link object is still passed to the templates for backward compatibility purposes, since it was heavily used.</description>
+    </item>
+    
+    <item>
+      <title>Technical validation - Key steps</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/sell/techvalidation-keysteps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/sell/techvalidation-keysteps/</guid>
+      <description>Technical Validation: key steps Have you ever wondered how the PrestaShop Addons Team proceeds with the validation ?
+We are going to show you how to spare time so that you can pretty much &amp;ldquo;validate&amp;rdquo; your own module before submitting it to the Addons Marketplace. First you might want to read the Technical Tools and the Good Practices.
+1. The Basics As you probably know, there are 3 types of submissions : New, Minor update, Major update.</description>
+    </item>
+    
+    <item>
+      <title>Theme translation</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/theme-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/theme-translation/</guid>
+      <description>Theme translation PrestaShop 1.7 comes with a new translation system for themes.
+It is explained in details in this Build article.</description>
+    </item>
+    
+    <item>
+      <title>Version pill</title>
+      <link>https://devdocs.prestashop.com/1.7/documentation/shortcodes/minver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/documentation/shortcodes/minver/</guid>
+      <description>Version pill When highlighting a new feature, you may want to highlight the version on which that feature was added. You can add a version pill using minver:
+Everything&#39;s better on {{&amp;lt; minver v=&amp;quot;1.7.4&amp;quot; &amp;gt;}}  Which renders to:
+Everything&amp;rsquo;s better on 1.7.4 
+ To align a pill with a title, use the parameter title=&amp;quot;true&amp;quot;:
+#### Example title {{&amp;lt; minver v=&amp;quot;1.7.4&amp;quot; title=&amp;quot;true&amp;quot;&amp;gt;}}  Which is rendered like this:</description>
+    </item>
+    
+    <item>
+      <title>Webpack</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/getting-started/asset-management/webpack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/getting-started/asset-management/webpack/</guid>
+      <description>About Webpack  Webpack is a module bundler. Webpack takes modules with dependencies and generates static assets representing those modules.
+ The main interest of using Webpack is that it will compile all your styles - which we advise you to write using Sass  - into a single CSS file. This way, your theme will make only one HTTP request for this single file, and since your browser will cache it for later re-use, it will even download this file only once.</description>
+    </item>
+    
+  </channel>
+</rss>

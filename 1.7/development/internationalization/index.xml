@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internationalization on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/development/internationalization/</link>
+    <description>Recent content in Internationalization on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/development/internationalization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Right-To-Left languages</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/rtl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/rtl/</guid>
+      <description>Right-to-Left languages PrestaShop supports Right-to-Left (RTL) languages natively, both in the Back Office and the Front Office. It can automatically transform themes to make them compatible with RTL languages.
+Any Front Office theme can be transformed automatically by PrestaShop. Read &amp;ldquo;RTL support&amp;rdquo; in the Themes section to learn more about this system.
+Back Office support The Back Office uses the same &amp;ldquo;theme-flipping&amp;rdquo; system as the Front Office feature. While for Front Office themes the transformation procedure must be triggered manually, in the BO this is performed automatically whenever an RTL language is activated on the shop, either by installing an RTL language or by setting up a language as RTL via edit in the BO.</description>
+    </item>
+    
+  </channel>
+</rss>

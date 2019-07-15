@@ -1,0 +1,8419 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.46" />
+    <meta name="description" content="Learn how to extend, modify and test PrestaShop, create modules, themes, and more.">
+<meta name="author" content="PrestaShop">
+
+    <link rel="shortcut icon" href="/images/preston-logo@2x.png" type="image/x-icon" />
+<link rel="icon" href="/images/preston-logo@2x.png" type="image/x-icon" />
+
+    <title>Getting started :: PrestaShop Developer Documentation</title>
+
+    
+    <link href="/css/font-awesome.min.css?1563219085" rel="stylesheet">
+    <link href="/css/highlight-github-style.css?1563219085" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1563219085" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1563219085" rel="stylesheet">
+    <link href="/css/auto-complete.css?1563219085" rel="stylesheet">
+    <link href="/css/style.css?1563219085" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+
+    <script src="/js/jquery-2.x.min.js?1563219085"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/1.7/modules/creation/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">PrestaShop DevDocs</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1563219085"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1563219085"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1563219085"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+      
+        
+          
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/basics/" title="Basics" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/basics/">
+          <b>1. </b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/introduction/" title="Introduction" class="dd-item ">
+        <a href="/1.7/basics/introduction/">
+        Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/basics/installation/" title="Installation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/basics/installation/">
+          Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/installation/system-requirements/" title="System requirements for PrestaShop 1.7" class="dd-item ">
+        <a href="/1.7/basics/installation/system-requirements/">
+        System requirements
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/installation/configuration/" title="Configuration" class="dd-item ">
+        <a href="/1.7/basics/installation/configuration/">
+        Configuration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/basics/keeping-up-to-date/" title="Keep PrestaShop up-to-date" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/basics/keeping-up-to-date/">
+          Staying up-to-date
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/keeping-up-to-date/backup/" title="How to backup PrestaShop" class="dd-item ">
+        <a href="/1.7/basics/keeping-up-to-date/backup/">
+        Shop backup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/keeping-up-to-date/migration/" title="How to migrate to PrestaShop 1.7" class="dd-item ">
+        <a href="/1.7/basics/keeping-up-to-date/migration/">
+        Migration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/keeping-up-to-date/upgrade/" title="How to upgrade PrestaShop" class="dd-item ">
+        <a href="/1.7/basics/keeping-up-to-date/upgrade/">
+        Upgrade
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/" title="Core Development" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/">
+          <b>2. </b>Core Development
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/webservice/" title="The PrestaShop Webservices" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/webservice/">
+          Webservice
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/webservice/tutorials/" title="Tutorials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/webservice/tutorials/">
+          Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/webservice/tutorials/prestashop-webservice-lib/" title="PrestaShop Webservice lib" class="dd-item ">
+        <a href="/1.7/development/webservice/tutorials/prestashop-webservice-lib/">
+        PrestaShop Webservice lib
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/webservice/tutorials/change_product_image/" title="Change product image" class="dd-item ">
+        <a href="/1.7/development/webservice/tutorials/change_product_image/">
+        Change product image
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/coding-standards/" title="Coding standards" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/coding-standards/">
+          Coding standards
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/naming-conventions/" title="Naming conventions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/naming-conventions/">
+          Naming conventions
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/architecture/" title="The PrestaShop architecture" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/architecture/">
+          Architecture
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/understanding-src-folder/" title="Understanding the &#34;src&#34; folder" class="dd-item ">
+        <a href="/1.7/development/architecture/understanding-src-folder/">
+        Understanding the &#34;src&#34; folder
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/architecture/domain/" title="Domain-driven architecture" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/architecture/domain/">
+          Domain-driven architecture
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/domain/cqrs/" title="CQRS - Commands and Queries" class="dd-item ">
+        <a href="/1.7/development/architecture/domain/cqrs/">
+        CQRS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/domain/data-transfer-objects/" title="Data Transfer Objects" class="dd-item ">
+        <a href="/1.7/development/architecture/domain/data-transfer-objects/">
+        Data Transfer Objects
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/domain/domain-exceptions/" title="Domain exceptions" class="dd-item ">
+        <a href="/1.7/development/architecture/domain/domain-exceptions/">
+        Domain exceptions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/architecture/migration-guide/" title="How to migrate Back Office pages to Symfony 3" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/architecture/migration-guide/">
+          Migration guide
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/templating-with-twig/" title="Templating with Twig" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/templating-with-twig/">
+        Templating with Twig
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/architecture/migration-guide/forms/" title="Forms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/architecture/migration-guide/forms/">
+          Forms
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/forms/crud-forms/" title="CRUD Forms" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/forms/crud-forms/">
+        CRUD Forms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/forms/settings-forms/" title="Settings Forms" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/forms/settings-forms/">
+        Settings Forms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/forms/cqrs-usage-in-forms/" title="CQRS usage in forms" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/forms/cqrs-usage-in-forms/">
+        CQRS usage in forms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/controller-routing/" title="Controller and Routing" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/controller-routing/">
+        Controller and Routing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/hooks/" title="Hooks" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/hooks/">
+        Hooks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/grid-crud-page/" title="Grid / CRUD" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/grid-crud-page/">
+        Grid / CRUD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/clean-up/" title="Cleaning up" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/clean-up/">
+        Cleaning up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/migration-guide/testing/" title="Testing" class="dd-item ">
+        <a href="/1.7/development/architecture/migration-guide/testing/">
+        Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/architecture/legacy/" title="Legacy" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/architecture/legacy/">
+          Legacy
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/architecture/legacy/legacy-controllers/" title="Legacy Controllers" class="dd-item ">
+        <a href="/1.7/development/architecture/legacy/legacy-controllers/">
+        Legacy Controllers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/database/" title="Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/database/">
+          Database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/database/dbquery/" title="DBQuery class" class="dd-item ">
+        <a href="/1.7/development/database/dbquery/">
+        DBQuery class
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/database/objectmodel/" title="ObjectModel class" class="dd-item ">
+        <a href="/1.7/development/database/objectmodel/">
+        ObjectModel class
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/database/structure/" title="Database structure" class="dd-item ">
+        <a href="/1.7/development/database/structure/">
+        Database structure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/" title="PrestaShop components" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/">
+          Components
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/form/" title="The Form component" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/form/">
+          Form
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/form/types-reference/" title="Types Reference" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/form/types-reference/">
+          Types Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/category-choice-tree/" title="CategoryChoiceTreeType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/category-choice-tree/">
+        CategoryChoiceTreeType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/change-password/" title="ChangePasswordType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/change-password/">
+        ChangePasswordType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/country-choice/" title="CountryChoiceType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/country-choice/">
+        CountryChoiceType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/date-picker/" title="DatePickerType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/date-picker/">
+        DatePickerType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/date-range/" title="DateRangeType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/date-range/">
+        DateRangeType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/formatted-textarea/" title="FormattedTextareaType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/formatted-textarea/">
+        FormattedTextareaType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/generatable-text/" title="GeneratableTextType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/generatable-text/">
+        GeneratableTextType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/ip-address/" title="IpAddressType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/ip-address/">
+        IpAddressType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/material-choice-table/" title="MaterialChoiceTableType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/material-choice-table/">
+        MaterialChoiceTableType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/material-choice-tree/" title="MaterialChoiceTreeType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/material-choice-tree/">
+        MaterialChoiceTreeType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/material-multiple-choice-table/" title="MaterialMultipleChoiceTableType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/material-multiple-choice-table/">
+        MaterialMultipleChoiceTableType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/money-with-suffix/" title="MoneyWithSuffixType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/money-with-suffix/">
+        MoneyWithSuffixType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/shop-choice-tree/" title="ShopChoiceTreeType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/shop-choice-tree/">
+        ShopChoiceTreeType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/switch/" title="SwitchType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/switch/">
+        SwitchType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/text-with-length-counter/" title="TextWithLengthCounterType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/text-with-length-counter/">
+        TextWithLengthCounterType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/text-with-unit/" title="TextWithUnitType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/text-with-unit/">
+        TextWithUnitType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/translatable/" title="TranslatableType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/translatable/">
+        TranslatableType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/form/types-reference/yes-and-no-choice/" title="YesAndNoChoiceType" class="dd-item ">
+        <a href="/1.7/development/components/form/types-reference/yes-and-no-choice/">
+        YesAndNoChoiceType
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/grid/" title="The Grid component" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/grid/">
+          Grid
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/grid/columns-reference/" title="Column Types reference" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/grid/columns-reference/">
+          Column Types reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/badge/" title="BadgeColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/badge/">
+        BadgeColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/data/" title="DataColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/data/">
+        DataColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/datetime/" title="DateTimeColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/datetime/">
+        DateTimeColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/image/" title="ImageColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/image/">
+        ImageColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/link/" title="LinkColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/link/">
+        LinkColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/toggle/" title="ToggleColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/toggle/">
+        ToggleColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/action/" title="ActionColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/action/">
+        ActionColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/bulk-action/" title="BulkActionColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/bulk-action/">
+        BulkActionColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/position/" title="PositionColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/position/">
+        PositionColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/employee-name-with-avatar/" title="EmployeeNameWithAvatarColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/employee-name-with-avatar/">
+        EmployeeNameWithAvatarColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/severity-level/" title="SeverityLevelColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/severity-level/">
+        SeverityLevelColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/grid/actions-reference/" title="Actions reference" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/grid/actions-reference/">
+          Actions reference
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/grid/bulk-actions-reference/" title="Bulk Actions reference" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/grid/bulk-actions-reference/">
+          Bulk Actions reference
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/grid/tutorials/" title="Tutorials" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/grid/tutorials/">
+          Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/work-with-bulk-actions/" title="How to use Bulk actions in Grid?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/work-with-bulk-actions/">
+        How to use Bulk actions in Grid?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/work-with-grid-actions/" title="How to work with Grid Actions?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/work-with-grid-actions/">
+        How to work with Grid Actions?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/work-with-search-form/" title="How to work with the Search Form?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/work-with-search-form/">
+        How to work with the Search Form?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/extend-grid-with-javascript/" title="How to extend a Grid with Javascript extensions?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/extend-grid-with-javascript/">
+        How to extend a Grid with Javascript extensions?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/modify-grid-in-module/" title="How to modify an existing Grid in a module?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/modify-grid-in-module/">
+        How to modify an existing Grid in a module?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/customize-templates/" title="How to customize the Grid templates?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/customize-templates/">
+        How to customize the Grid templates?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/create-custom-grid-action/" title="How to create a custom Grid Action?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/create-custom-grid-action/">
+        How to create a custom Grid Action?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/create-custom-column-type/" title="How to create a custom Column Type?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/create-custom-column-type/">
+        How to create a custom Column Type?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/tutorials/create-empty-state/" title="How to create an Empty state?" class="dd-item ">
+        <a href="/1.7/development/components/grid/tutorials/create-empty-state/">
+        How to create an Empty state?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/import/" title="The Import component" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/import/">
+          Import
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/position-updater/" title="The Position Updater component" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/position-updater/">
+          Position Updater
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/faceted-search/" title="The Faceted Search component" class="dd-item ">
+        <a href="/1.7/development/components/faceted-search/">
+        Faceted Search
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/components/mail-templates/" title="The Mail Template component" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/components/mail-templates/">
+          Mail Templates
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/internationalization/" title="Internationalization" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/internationalization/">
+          Internationalization
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/development/internationalization/translation/" title="Translation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/development/internationalization/translation/">
+          Translation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/internationalization/translation/translation-domains/" title="Translation Domains" class="dd-item ">
+        <a href="/1.7/development/internationalization/translation/translation-domains/">
+        Translation Domains
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/internationalization/translation/native-module-translation/" title="Native module translation" class="dd-item ">
+        <a href="/1.7/development/internationalization/translation/native-module-translation/">
+        Native module translation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/internationalization/rtl/" title="Right-To-Left languages" class="dd-item ">
+        <a href="/1.7/development/internationalization/rtl/">
+        Right-To-Left languages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/register-new-hook/" title="Register a new hook" class="dd-item ">
+        <a href="/1.7/development/register-new-hook/">
+        Register a new hook
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/compile-assets/" title="How to compile assets" class="dd-item ">
+        <a href="/1.7/development/compile-assets/">
+        How to compile assets
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/mail/" title="How to send e-mails" class="dd-item ">
+        <a href="/1.7/development/mail/">
+        How to send e-mails
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/testing/" title="Testing" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/testing/">
+          <b>3. </b>Testing
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/testing/how-to-launch-tests/" title="How to execute tests" class="dd-item ">
+        <a href="/1.7/testing/how-to-launch-tests/">
+        Executing tests
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/testing/how-to-create-your-own-tests/" title="How to create your own tests" class="dd-item ">
+        <a href="/1.7/testing/how-to-create-your-own-tests/">
+        Creating your own tests
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/" title="PrestaShop modules" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/1.7/modules/">
+          <b>4. </b>Modules
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/introduction/" title="Introduction" class="dd-item ">
+        <a href="/1.7/modules/introduction/">
+        Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/creation/" title="Getting started" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/1.7/modules/creation/">
+          Getting started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/creation/module-file-structure/" title="Folder structure" class="dd-item ">
+        <a href="/1.7/modules/creation/module-file-structure/">
+        Folder structure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/creation/adding-configuration-page/" title="Adding a configuration page" class="dd-item ">
+        <a href="/1.7/modules/creation/adding-configuration-page/">
+        Adding a configuration page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/creation/displaying-content-in-front-office/" title="Displaying content on the front office" class="dd-item ">
+        <a href="/1.7/modules/creation/displaying-content-in-front-office/">
+        Displaying content on the front office
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/creation/enabling-auto-update/" title="Enabling the Auto-Update" class="dd-item ">
+        <a href="/1.7/modules/creation/enabling-auto-update/">
+        Enabling the Auto-Update
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/creation/module-translation/" title="Module translation" class="dd-item ">
+        <a href="/1.7/modules/creation/module-translation/">
+        Module translation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/creation/good-practices/" title="Good practices for developing modules" class="dd-item ">
+        <a href="/1.7/modules/creation/good-practices/">
+        Good practices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/" title="Extension concepts" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/">
+          Extension concepts
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/configuration/" title="Configuration" class="dd-item ">
+        <a href="/1.7/modules/concepts/configuration/">
+        Configuration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/hooks/" title="Hooks" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/hooks/">
+          Hooks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/hooks/list-of-hooks/" title="List of hooks" class="dd-item ">
+        <a href="/1.7/modules/concepts/hooks/list-of-hooks/">
+        List of hooks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/hooks/use-hooks-on-modern-pages/" title="Use hooks on modern pages" class="dd-item ">
+        <a href="/1.7/modules/concepts/hooks/use-hooks-on-modern-pages/">
+        Use hooks on modern pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/widgets/" title="Widgets" class="dd-item ">
+        <a href="/1.7/modules/concepts/widgets/">
+        Widgets
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/controllers/" title="Controllers" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/controllers/">
+          Controllers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/controllers/front-controllers/" title="Front controllers" class="dd-item ">
+        <a href="/1.7/modules/concepts/controllers/front-controllers/">
+        Front controllers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/controllers/admin-controllers/" title="Admin controllers" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/controllers/admin-controllers/">
+          Admin controllers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/controllers/admin-controllers/tabs/" title="Adding module links in the back-office side menu" class="dd-item ">
+        <a href="/1.7/modules/concepts/controllers/admin-controllers/tabs/">
+        Adding module links in the back-office side menu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/controllers/kpi-blocks/" title="KPI block in Admin pages" class="dd-item ">
+        <a href="/1.7/modules/concepts/controllers/kpi-blocks/">
+        KPI block in Admin pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/forms/" title="Forms" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/forms/">
+          Forms
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/forms/admin-forms/" title="Alter Back Office forms" class="dd-item ">
+        <a href="/1.7/modules/concepts/forms/admin-forms/">
+        Alter Back Office forms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/templating/" title="Templating" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/templating/">
+          Templating
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/templating/admin-views/" title="How to override Back Office views" class="dd-item ">
+        <a href="/1.7/modules/concepts/templating/admin-views/">
+        Overriding Back office views
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/doctrine/" title="Doctrine" class="dd-item ">
+        <a href="/1.7/modules/concepts/doctrine/">
+        Doctrine
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/overrides/" title="Overrides" class="dd-item ">
+        <a href="/1.7/modules/concepts/overrides/">
+        Overrides
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/services/" title="Services" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/services/">
+          Services
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/commands/" title="Commands" class="dd-item ">
+        <a href="/1.7/modules/concepts/commands/">
+        Commands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/concepts/mail-templates/" title="Mail Templates" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/mail-templates/">
+          Mail Templates
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/mail-templates/extend-a-layout-from-module/" title="How to extend a layout in a theme from a module" class="dd-item ">
+        <a href="/1.7/modules/concepts/mail-templates/extend-a-layout-from-module/">
+        Extending a layout
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/mail-templates/add-a-layout-from-module/" title="How to add a layout in a theme from a module" class="dd-item ">
+        <a href="/1.7/modules/concepts/mail-templates/add-a-layout-from-module/">
+        Adding a layout
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/mail-templates/add-a-theme-from-module/" title="How to add an email theme from a module" class="dd-item ">
+        <a href="/1.7/modules/concepts/mail-templates/add-a-theme-from-module/">
+        Adding a theme
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/mail-templates/add-layout-variables-from-module/" title="How to add layout variables from a module" class="dd-item ">
+        <a href="/1.7/modules/concepts/mail-templates/add-layout-variables-from-module/">
+        Adding layout variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/concepts/mail-templates/apply-transformation-from-module/" title="How to apply a transformation from a module" class="dd-item ">
+        <a href="/1.7/modules/concepts/mail-templates/apply-transformation-from-module/">
+        Applying transformations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/payment/" title="Payment modules" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/payment/">
+          Payment modules
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/testing/" title="Testing" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/testing/">
+          Testing
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/core_updates/" title="Core changes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/core_updates/">
+          Core changes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/core_updates/1.7.5/" title="Changes in PrestaShop 1.7.5" class="dd-item ">
+        <a href="/1.7/modules/core_updates/1.7.5/">
+        Changes in 1.7.5
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/core_updates/1.7.6/" title="Changes in PrestaShop 1.7.6" class="dd-item ">
+        <a href="/1.7/modules/core_updates/1.7.6/">
+        Changes in 1.7.6
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/sell/" title="Selling your modules on the Addons Marketplace" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/sell/">
+          Selling your modules
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/sell/technical-tools/" title="Technical tools" class="dd-item ">
+        <a href="/1.7/modules/sell/technical-tools/">
+        Technical tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/sell/techvalidation-keysteps/" title="Technical validation - Key steps" class="dd-item ">
+        <a href="/1.7/modules/sell/techvalidation-keysteps/">
+        Technical validation - Key steps
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/modules/sample_modules/" title="Sample modules" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/modules/sample_modules/">
+          Sample modules
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/" title="Grid and identifiable object form hooks usage example" class="dd-item ">
+        <a href="/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/">
+        Grid and identifiable object form hooks usage example
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/" title="Themes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/">
+          <b>5. </b>Themes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/getting-started/" title="Getting started with theme development" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/getting-started/">
+          Getting started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/guidelines/" title="Guidelines and coding standards" class="dd-item ">
+        <a href="/1.7/themes/getting-started/guidelines/">
+        Guidelines
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/setting-up-your-local-environment/" title="Setting up your local environment" class="dd-item ">
+        <a href="/1.7/themes/getting-started/setting-up-your-local-environment/">
+        Set up your local environment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/tools-for-theme-designers/" title="Tooling prerequisites for theme designers" class="dd-item ">
+        <a href="/1.7/themes/getting-started/tools-for-theme-designers/">
+        Required tools
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/starter-theme/" title="Starter Theme" class="dd-item ">
+        <a href="/1.7/themes/getting-started/starter-theme/">
+        Starter Theme
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/theme-organization/" title="Theme organization" class="dd-item ">
+        <a href="/1.7/themes/getting-started/theme-organization/">
+        Theme organization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/theme-yml/" title="Theme.yml" class="dd-item ">
+        <a href="/1.7/themes/getting-started/theme-yml/">
+        Theme.yml
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/getting-started/asset-management/" title="Asset management" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/getting-started/asset-management/">
+          Asset management
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/getting-started/asset-management/webpack/" title="Webpack" class="dd-item ">
+        <a href="/1.7/themes/getting-started/asset-management/webpack/">
+        Webpack
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/reference/" title="Theme development reference" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/reference/">
+          Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/reference/hooks/" title="Theme Hooks" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/reference/hooks/">
+          Theme Hooks
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/reference/javascript-events/" title="Javascript events" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/reference/javascript-events/">
+          Javascript events
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/reference/template-inheritance/" title="Template inheritance" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/reference/template-inheritance/">
+          Template inheritance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/template-inheritance/parent-child-feature/" title="Parent/child theme" class="dd-item ">
+        <a href="/1.7/themes/reference/template-inheritance/parent-child-feature/">
+        Parent/child theme
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/reference/templates/" title="Templates" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/reference/templates/">
+          Templates
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/templates/templates-layouts/" title="Templates &amp; layouts" class="dd-item ">
+        <a href="/1.7/themes/reference/templates/templates-layouts/">
+        Templates &amp; layouts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/templates/head/" title="Head" class="dd-item ">
+        <a href="/1.7/themes/reference/templates/head/">
+        Head
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/templates/notifications/" title="Notifications" class="dd-item ">
+        <a href="/1.7/themes/reference/templates/notifications/">
+        Notifications
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/templates/listing/" title="Listing pages" class="dd-item ">
+        <a href="/1.7/themes/reference/templates/listing/">
+        Listing pages
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/migration-from-16/" title="Migrating from PrestaShop 1.6" class="dd-item ">
+        <a href="/1.7/themes/reference/migration-from-16/">
+        Migrating from 1.6
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/overriding-modules/" title="Overriding modules" class="dd-item ">
+        <a href="/1.7/themes/reference/overriding-modules/">
+        Overriding modules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/rtl/" title="RTL support" class="dd-item ">
+        <a href="/1.7/themes/reference/rtl/">
+        RTL support
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/smarty-helpers/" title="Smarty helper functions" class="dd-item ">
+        <a href="/1.7/themes/reference/smarty-helpers/">
+        Smarty helpers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/reference/theme-translation/" title="Theme translation" class="dd-item ">
+        <a href="/1.7/themes/reference/theme-translation/">
+        Theme translation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/themes/distribution/" title="Distribution" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/themes/distribution/">
+          Distribution
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/distribution/testing/" title="Testing" class="dd-item ">
+        <a href="/1.7/themes/distribution/testing/">
+        Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/themes/distribution/exporting/" title="Exporting your theme" class="dd-item ">
+        <a href="/1.7/themes/distribution/exporting/">
+        Exporting your theme
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/documentation/" title="Documentation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/documentation/">
+          <b>6. </b>Documentation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/why/" title="Why write documentation" class="dd-item ">
+        <a href="/1.7/documentation/why/">
+        Why write documentation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/documentation/how/" title="Contribute" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/documentation/how/">
+          Contribute
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/how/edit-on-github/" title="How to edit a page on GitHub" class="dd-item ">
+        <a href="/1.7/documentation/how/edit-on-github/">
+        Edit on GitHub
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/how/edit-on-your-computer/" title="How to edit a page on your computer" class="dd-item ">
+        <a href="/1.7/documentation/how/edit-on-your-computer/">
+        Edit on your computer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/how/writing-markdown/" title="Writing Markdown" class="dd-item ">
+        <a href="/1.7/documentation/how/writing-markdown/">
+        Writing Markdown
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/documentation/shortcodes/" title="Shortcodes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/documentation/shortcodes/">
+          Shortcodes
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/shortcodes/ref/" title="Internal and cross links" class="dd-item ">
+        <a href="/1.7/documentation/shortcodes/ref/">
+        Internal and cross links
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/shortcodes/callout/" title="Callout" class="dd-item ">
+        <a href="/1.7/documentation/shortcodes/callout/">
+        Callout
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/shortcodes/funcdef/" title="Function definition" class="dd-item ">
+        <a href="/1.7/documentation/shortcodes/funcdef/">
+        Function definition
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/shortcodes/notice/" title="Note block" class="dd-item ">
+        <a href="/1.7/documentation/shortcodes/notice/">
+        Note block
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/documentation/shortcodes/minver/" title="Version pill" class="dd-item ">
+        <a href="/1.7/documentation/shortcodes/minver/">
+        Version pill
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/contribute/" title="Contribute" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/contribute/">
+          <b>7. </b>Contribute
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/contribute/contribute_using_docker/" title="Contribute using Docker" class="dd-item ">
+        <a href="/1.7/contribute/contribute_using_docker/">
+        Contribute using Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/contribute/contribute-reporting-issues/" title="How to use GitHub to report an issue" class="dd-item ">
+        <a href="/1.7/contribute/contribute-reporting-issues/">
+        Contribute by reporting issues
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/contribute/contribution-guidelines/" title="Contribution guidelines" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/contribute/contribution-guidelines/">
+          Contribution guidelines
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/contribute/contribution-guidelines/project-modules/" title="Contribution guidelines for modules" class="dd-item ">
+        <a href="/1.7/contribute/contribution-guidelines/project-modules/">
+        Project Modules
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+              
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/scale/" title="Scale" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/scale/">
+          <b>8. </b>Scale
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/1.7/scale/benchmark/" title="How to benchmark your PrestaShop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/1.7/scale/benchmark/">
+          How to benchmark
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/scale/benchmark/front-office/" title="Front-Office Benchmark" class="dd-item ">
+        <a href="/1.7/scale/benchmark/front-office/">
+        Front-Office Benchmark
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/scale/benchmark/back-office/" title="Back-Office Benchmark" class="dd-item ">
+        <a href="/1.7/scale/benchmark/back-office/">
+        Back-Office Benchmark
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/scale/optimizations/" title="Optimize your PrestaShop" class="dd-item ">
+        <a href="/1.7/scale/optimizations/">
+        Optimize your PrestaShop
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+      
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p><a href="https://github.com/PrestaShop/PrestaShop/"><i class="fa fa-github" aria-hidden="true"></i> PrestaShop on GitHub</a></p>
+<p><a href="https://github.com/PrestaShop/PrestaShop/issues"><i class="fa fa-bug" aria-hidden="true"></i> Report a bug</a></p>
+<p><a href="https://gitter.im/PrestaShop/General"><i class="fa fa-comment" aria-hidden="true"></i> Join us on Gitter</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+      <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        
+<div>
+  <div id="top-bar">
+    
+      
+      
+      
+      <div id="top-github-link">
+        <a class="github-link" title='Improve this page' href="https://github.com/PrestaShop/docs/edit/master/src/content/1.7/modules/creation/_index.md" target="blank">
+          <i class="fa fa-pencil"></i>
+          <span id="top-github-link-text">Improve this page</span>
+        </a>
+        <a class="how-to-improve" href="/1.7/documentation/how/">
+          <i class="fa fa-question-circle"></i>
+          <span>How</span>
+        </a>
+      </div>
+      
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://schema.org/breadcrumb">
+      <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="links">
+        
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              <a href='/'>Home</a> > <a href='/1.7/'>PrestaShop 1.7</a> > <a href='/1.7/modules/'>Modules</a> > Getting started
+            
+          
+            
+          
+            
+          
+            
+          
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+        
+
+        
+        
+          
+            <div id="toc">
+  <div class="wrapper">
+    <div id="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#getting-started">Getting started</a>
+<ul>
+<li><a href="#quick-start">Quick start</a></li>
+<li><a href="#tutorial-understanding-your-first-module">Tutorial: Understanding your first module</a>
+<ul>
+<li><a href="#the-constant-test">The constant test</a></li>
+<li><a href="#the-main-class">The main class</a></li>
+<li><a href="#the-constructor-method">The constructor method</a></li>
+</ul></li>
+<li><a href="#building-the-install-and-uninstall-methods">Building the install() and uninstall() methods</a>
+<ul>
+<li><a href="#the-install-method">The install() method</a></li>
+<li><a href="#the-uninstall-method">The uninstall() method</a></li>
+</ul></li>
+<li><a href="#the-configuration-object">The Configuration object</a>
+<ul>
+<li><a href="#the-main-methods">The main methods</a></li>
+<li><a href="#handling-the-multistore-feature">Handling the Multistore feature</a></li>
+<li><a href="#retrieving-external-values-from-the-ps-configuration-data-table">Retrieving external values from the ps_configuration data table</a></li>
+</ul></li>
+<li><a href="#the-shop-object">The Shop object</a></li>
+<li><a href="#the-icon-file">The icon file</a></li>
+<li><a href="#installing-the-module">Installing the module</a></li>
+<li><a href="#keeping-things-secure">Keeping things secure</a></li>
+</ul></li>
+</ul>
+</nav>
+
+    <div id="navigation">
+  
+  
+
+  
+
+  
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+    
+  
+
+  
+  
+  <a class="nav nav-next" href="/1.7/modules/creation/module-file-structure/" title="Folder structure" style="margin-right: 0px;">
+    <i class="fa fa-chevron-right"></i>
+    Next article
+  </a>
+  
+</div>
+
+  </div>
+</div>
+
+          
+        
+
+        <div id="body-inner">
+
+          
+
+
+
+
+
+
+<h1 id="getting-started">Getting started</h1>
+
+<h2 id="quick-start">Quick start</h2>
+
+<p>Modules must follow some guidelines to work on PrestaShop.</p>
+
+<p>If you want to get started quickly, with a ready-to-use module template, you can use the module
+generator available on the <a href="https://validator.prestashop.com/generator">PrestaShop Validator</a>.</p>
+
+<p>It provides an easy way to generate a payment or shipping module, with the basic
+structure, the default properties customized and the most common use cases covered (hook, upgrade&hellip;).</p>
+
+<p><strong><a href="https://validator.prestashop.com/generator">&gt; Generate a module</a></strong></p>
+
+<h2 id="tutorial-understanding-your-first-module">Tutorial: Understanding your first module</h2>
+
+<div class="notices note" ><p>Before you start writing code for your PrestaShop module, you should be
+aware that the PrestaShop team uses a specific set of coding conventions
+(or coding standards, coding norm, etc.).</p>
+
+<p>As Wikipedia puts it, &ldquo;<a href="https://en.wikipedia.org/wiki/Coding_conventions">Coding conventions</a> are a set of guidelines for a
+specific programming language that recommend programming style,
+practices and methods for each aspect of a piece program written in this
+language&rdquo;, and &ldquo;Good procedures, good methodology and good coding
+standards can be used to drive a project such that the quality is
+maximized and the overall development time and development and
+maintenance cost is minimized.&ldquo;.</p>
+
+<p>PrestaShop&rsquo;s own standards are available at this page: <a href="/1.7/development/coding-standards/">Coding standards</a>. You should read it in order to make sure that the code you produce fits correctly with the overall code of the PrestaShop project. Configuring your IDE hints or using automated tools like PHPCodeSniffer can help you make sure you follow the standards properly.</p>
+</div>
+
+
+<p>Let&rsquo;s create a simple first module; this will enable us to better
+describe its structure. We will name it &ldquo;My module&rdquo;.</p>
+
+<p>First, create the module&rsquo;s folder, in the <code>/modules</code> folder. It should
+have the same name as the module, with no space, only alphanumerical
+characters, the hyphen and the underscore, all in lowercase:
+<code>/mymodule</code>.</p>
+
+<p>This folder must contain the main file, a PHP file of the same name as
+the folder, which will handle most of the processing: <code>mymodule.php</code>.</p>
+
+<p>That is enough for a very basic module, but obviously more files and
+folders can be added later.</p>
+
+<h3 id="the-constant-test">The constant test</h3>
+
+<p>The main mymodule.php file must start with the following test:</p>
+
+<pre><code class="language-php">if (!defined('_PS_VERSION_')) {
+    exit;
+}
+</code></pre>
+
+<p>This checks for the existence of an always-existing PrestaShop constant
+(its version number), and if it does not exist, it stops the module from
+loading. The sole purpose of this is to prevent malicious visitors to
+load this file directly.</p>
+
+<p>Note that, as required by the PrestaShop Coding Standards (see above),
+we do not use a PHP closing tag.</p>
+
+<h3 id="the-main-class">The main class</h3>
+
+<p>The main file must contain the module&rsquo;s main class (along with other
+classes if needed). PrestaShop uses Object-Oriented programming, and so
+do its modules.</p>
+
+<p>That class must bear the same name as the module and its folder, in
+CamelCase (see <a href="https://en.wikipedia.org/wiki/CamelCase">https://en.wikipedia.org/wiki/CamelCase</a>). In our
+example: <code>MyModule</code>. Furthermore, that class must extend the <code>Module</code>
+class, in order to inherit all its methods and attributes.</p>
+
+<pre><code class="language-php">if (!defined('_PS_VERSION_')) {
+    exit;
+}
+
+class MyModule extends Module
+{
+}
+</code></pre>
+
+<p>It can just as well extend any class derived from Module, for specific
+needs: <code>PaymentModule</code>, <code>ModuleGridEngine</code>, <code>ModuleGraph</code>, etc.</p>
+
+<p>At this stage, if you place the module&rsquo;s folder on the /modules folder,
+the module can already be seen in the &ldquo;Modules&rdquo; page in the back office,
+in the &ldquo;Other modules&rdquo; section – albeit with no real name nor thumbnail.</p>
+
+<h3 id="the-constructor-method">The constructor method</h3>
+
+<p>Now, let&rsquo;s fill the class&rsquo; code block with the essential constructor
+lines. A constructor is a function in a class that is automatically
+called when you create a new instance of a class with new. In the case
+of a PrestaShop, the constructor class is the first method to be called
+when the module is loaded by PrestaShop. This is therefore the best
+place to set most of its details.</p>
+
+<pre><code class="language-php">if (!defined('_PS_VERSION_')) {
+    exit;
+}
+
+class MyModule extends Module
+{
+    public function __construct()
+    {
+        $this-&gt;name = 'mymodule';
+        $this-&gt;tab = 'front_office_features';
+        $this-&gt;version = '1.0.0';
+        $this-&gt;author = 'Firstname Lastname';
+        $this-&gt;need_instance = 0;
+        $this-&gt;ps_versions_compliancy = [
+            'min' =&gt; '1.6',
+            'max' =&gt; _PS_VERSION_
+        ];
+        $this-&gt;bootstrap = true;
+
+        parent::__construct();
+
+        $this-&gt;displayName = $this-&gt;l('My module');
+        $this-&gt;description = $this-&gt;l('Description of my module.');
+
+        $this-&gt;confirmUninstall = $this-&gt;l('Are you sure you want to uninstall?');
+
+        if (!Configuration::get('MYMODULE_NAME')) {
+            $this-&gt;warning = $this-&gt;l('No name provided');
+        }
+    }
+}
+</code></pre>
+
+<p>Let&rsquo;s examine each line from this first version of the <code>MyModule</code>
+class&hellip;</p>
+
+<pre><code class="language-php">// This line defines the class constructor function.
+$this-&gt;name = 'mymodule';
+$this-&gt;tab = 'front_office_features';
+$this-&gt;version = '1.0';
+$this-&gt;author = 'Firstname Lastname';
+</code></pre>
+
+<p>This section assigns a handful of attributes to the class instance
+(<code>this</code>):</p>
+
+<ul>
+<li>&lsquo;name&rsquo; attribute. This attributes serves as an internal identifier.
+The value MUST be the name of the module&rsquo;s folder. Do not use
+special characters or spaces, and keep it lower-case.</li>
+<li>&lsquo;tab&rsquo; attribute. The title for the section that shall contain this
+module in PrestaShop&rsquo;s back office modules list. You may use an
+existing name, such as seo, <code>front_office_features</code> or
+<code>analytics_stats</code>, or a custom one. In this last case, a new section
+will be created with your identifier. We choose
+&ldquo;<code>front_office_features</code>&rdquo; because this first module will mostly have
+an impact on the front-end.</li>
+<li>&lsquo;version&rsquo; attribute. The version number for the module, displayed in
+the modules list. It is a string, so that you may use such variation
+as &ldquo;1.0b&rdquo;, &ldquo;3.07 beta 3&rdquo; or &ldquo;0.94 (not for production use)&rdquo;.</li>
+<li>&lsquo;author&rsquo; attribute. This is displayed as-is in the PrestaShop
+modules list.</li>
+</ul>
+
+<p>Here is the list of available &ldquo;Tab&rdquo; attributes, and their corresponding
+section in the &ldquo;Modules&rdquo; page:</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>&ldquo;Tab&rdquo; attribute</strong></th>
+<th><strong>Module section</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>administration</code></td>
+<td>Administration</td>
+</tr>
+
+<tr>
+<td><code>advertising_marketing</code></td>
+<td>Advertising &amp; Marketing</td>
+</tr>
+
+<tr>
+<td><code>analytics_stats</code></td>
+<td>Analytics &amp; Stats</td>
+</tr>
+
+<tr>
+<td><code>billing_invoicing</code></td>
+<td>Billing &amp; Invoices</td>
+</tr>
+
+<tr>
+<td><code>checkout</code></td>
+<td>Checkout</td>
+</tr>
+
+<tr>
+<td><code>content_management</code></td>
+<td>Content Management</td>
+</tr>
+
+<tr>
+<td><code>dashboard</code></td>
+<td>Dashboard</td>
+</tr>
+
+<tr>
+<td><code>emailing</code></td>
+<td>E-mailing</td>
+</tr>
+
+<tr>
+<td><code>export</code></td>
+<td>Export</td>
+</tr>
+
+<tr>
+<td><code>front_office_features</code></td>
+<td>Front Office Features</td>
+</tr>
+
+<tr>
+<td><code>i18n_localization</code></td>
+<td>I18n &amp; Localization</td>
+</tr>
+
+<tr>
+<td><code>market_place</code></td>
+<td>Market Place</td>
+</tr>
+
+<tr>
+<td><code>merchandizing</code></td>
+<td>Merchandizing</td>
+</tr>
+
+<tr>
+<td><code>migration_tools</code></td>
+<td>Migration Tools</td>
+</tr>
+
+<tr>
+<td><code>mobile</code></td>
+<td>Mobile</td>
+</tr>
+
+<tr>
+<td><code>others</code></td>
+<td>Other Modules</td>
+</tr>
+
+<tr>
+<td><code>payments_gateways</code></td>
+<td>Payments &amp; Gateways</td>
+</tr>
+
+<tr>
+<td><code>payment_security</code></td>
+<td>Payment Security</td>
+</tr>
+
+<tr>
+<td><code>pricing_promotion</code></td>
+<td>Pricing &amp; Promotion</td>
+</tr>
+
+<tr>
+<td><code>quick_bulk_update</code></td>
+<td>Quick / Bulk update</td>
+</tr>
+
+<tr>
+<td><code>search_filter</code></td>
+<td>Search &amp; Filter</td>
+</tr>
+
+<tr>
+<td><code>seo</code></td>
+<td>SEO</td>
+</tr>
+
+<tr>
+<td><code>shipping_logistics</code></td>
+<td>Shipping &amp; Logistics</td>
+</tr>
+
+<tr>
+<td><code>slideshows</code></td>
+<td>Slideshows</td>
+</tr>
+
+<tr>
+<td><code>smart_shopping</code></td>
+<td>Smart Shopping</td>
+</tr>
+
+<tr>
+<td><code>social_networks</code></td>
+<td>Social Networks</td>
+</tr>
+</tbody>
+</table>
+
+<p>Let&rsquo;s continue with the next line in this block of code:</p>
+
+<pre><code class="language-php">$this-&gt;need_instance = 0;
+$this-&gt;ps_versions_compliancy = [
+    'min' =&gt; '1.5',
+    'max' =&gt; '1.6'
+];
+$this-&gt;bootstrap = true;
+</code></pre>
+
+<p>This section handles the relationship with the module and its
+environment (namely, PrestaShop):</p>
+
+<ul>
+<li><em>need_instance</em>. Indicates whether to load the module&rsquo;s class when
+displaying the &ldquo;Modules&rdquo; page in the back office. If set at 0, the
+module will not be loaded, and therefore will spend less resources
+to generate the &ldquo;Modules&rdquo; page. If your module needs to display a
+warning message in the &ldquo;Modules&rdquo; page, then you must set this
+attribute to 1.</li>
+<li><em>ps_versions_compliancy</em>. Indicates which version of PrestaShop
+this module is compatible with. In the example above, we explicitly
+write that this module will only work with PrestaShop 1.5.x, and no
+other major version.</li>
+<li><em>bootstrap</em>. Indicates that the module&rsquo;s template files have been
+built with PrestaShop 1.6&rsquo;s bootstrap tools in mind – and therefore,
+that PrestaShop should not try to wrap the template code for the
+configuration screen (if there is one) with helper tags.</li>
+</ul>
+
+<p>Next, we call the constructor method from the parent PHP class:</p>
+
+<pre><code class="language-php">parent::__construct();
+</code></pre>
+
+<p>This will trigger a lot of actions from PrestaShop that you do not need
+to know about at this point. Calling the parent constuctor method must
+be done after the creation of the <code>this-&gt;name variable</code> and before any
+use of the <code>this-&gt;l()</code> translation method.</p>
+
+<p>The next section deals with text strings, which are encapsulated in
+PrestaShop&rsquo;s translation method, <code>l()</code>:</p>
+
+<pre><code class="language-php">$this-&gt;displayName = $this-&gt;l('My module');
+$this-&gt;description = $this-&gt;l('Description of my module.');
+
+$this-&gt;confirmUninstall = $this-&gt;l('Are you sure you want to uninstall?');
+
+if (!Configuration::get('MYMODULE_NAME')) {
+    $this-&gt;warning = $this-&gt;l('No name provided.');
+}
+</code></pre>
+
+<p>These lines respectively assign:</p>
+
+<ul>
+<li>A name for the module, which will be displayed in the back office&rsquo;s
+modules list.</li>
+<li>A description for the module, which will be displayed in the back
+office&rsquo;s modules list.</li>
+<li>A message, asking the administrator if he really does want to
+uninstall the module. To be used in the installation code.</li>
+<li>A warning that the module doesn&rsquo;t have its <code>MYMODULE_NAME</code> database
+value set yet (this last point being specific to our example, as we
+will see later).</li>
+</ul>
+
+<p>The constructor method is now complete. You are free to add more to it
+later if necessary, but this the bare minimum for a working module.</p>
+
+<p>Now go to your back office, then in the Modules page (found at &ldquo;Modules&rdquo; &gt;
+&ldquo;Modules &amp; Services&rdquo;) choose the Selection tab. The module is visible in
+the modules list, with its information displayed – and no icon for now.</p>
+
+<p>You can install the module, but it does not do anything yet.</p>
+
+<p>When you click on the &ldquo;Install&rdquo; button for your module, it will display
+a module window saying that your module is Untrusted.</p>
+
+<p>The only way to make your module Trusted is to distribute it through the
+PrestaShop Addons marketplace (with a unique identifying key), or to
+become a PrestaShop partner. Other trusted modules are the native ones.</p>
+
+<p>To install the module, click the &ldquo;Proceed with installation&rdquo; on this
+screen.</p>
+
+<h2 id="building-the-install-and-uninstall-methods">Building the install() and uninstall() methods</h2>
+
+<p>Some modules have more needs than just using PrestaShop&rsquo;s features in
+special ways. Your module might need to perform actions on installation,
+such as checking PrestaShop&rsquo;s settings or to registering its own
+settings in the database. Likewise, if you changed things in the
+database on installation, it is highly recommended to change them back
+(or remove them) when uninstalling the module.</p>
+
+<p>The <code>install()</code> and <code>uninstall()</code> methods make it possible to control
+what happens when the store administrator installs or uninstalls the
+module. They must be included in the main class&rsquo; block of code (in our
+example, the <code>MyModule</code> class) – at the same level as the constructor
+method.</p>
+
+<h3 id="the-install-method">The install() method</h3>
+
+<p>Here is the bare minimum for the <code>install()</code> method:</p>
+
+<pre><code class="language-php">public function install()
+{
+    return parent::install();
+}
+</code></pre>
+
+<p>In this first and extremely simplistic incarnation, this method does the
+minimum needed: return true returned by the Module class&rsquo; <code>install()</code>
+method, which returns either <code>true</code> if the module is correctly
+installed, or <code>false</code> otherwise. As it is, if we had not created that
+method, the superclass&rsquo; method would have been called instead anyway,
+making the end result identical. Nevertheless, we must mention this
+method, because it will be very useful once we have to perform checks
+and actions during the module&rsquo;s installation process: creating SQL
+tables, copying files, creation configuration variables, etc.</p>
+
+<p>So for example how you can expand the <code>install()</code> method to perform
+installation checks. In the following example, we perform the following
+tasks during installation:</p>
+
+<ul>
+<li>Check that the Multistore feature is enabled, and if so, set the
+current context to all shops on this installation of PrestaShop.</li>
+<li>Check that the module parent class is installed.</li>
+<li>Check that the module can be attached to the <code>leftColumn</code> hook.</li>
+<li>Check that the module can be attached to the <code>header</code> hook.</li>
+<li>Create the <code>MYMODULE_NAME</code> configuration setting, setting its value
+to &ldquo;my friend&rdquo;.</li>
+</ul>
+
+<pre><code class="language-php">public function install()
+{
+    if (Shop::isFeatureActive()) {
+        Shop::setContext(Shop::CONTEXT_ALL);
+    }
+
+    if (!parent::install() ||
+        !$this-&gt;registerHook('leftColumn') ||
+        !$this-&gt;registerHook('header') ||
+        !Configuration::updateValue('MYMODULE_NAME', 'my friend')
+    ) {
+        return false;
+    }
+
+    return true;
+}
+</code></pre>
+
+<p>If any of the lines in the testing block fails, the method returns
+<code>false</code> and the installation does not happen.</p>
+
+<h3 id="the-uninstall-method">The uninstall() method</h3>
+
+<p>Here is the bare minimum for the uninstall() method:</p>
+
+<pre><code class="language-php">public function uninstall()
+{
+    return parent::uninstall();
+}
+</code></pre>
+
+<p>Building on this foundation, we want an uninstall() method that would
+delete the data added to the database during the installation (
+<code>MYMODULE_NAME</code> configuration setting). This method would look like
+this:</p>
+
+<pre><code class="language-php">public function uninstall()
+{
+    if (!parent::uninstall() ||
+        !Configuration::deleteByName('MYMODULE_NAME')
+    ) {
+        return false;
+    }
+
+    return true;
+}
+</code></pre>
+
+<h2 id="the-configuration-object">The Configuration object</h2>
+
+<p>As you can see, our three blocks of code (<code>__construct()</code>, <code>install()</code>
+and <code>uninstall()</code>) all make use of a new object, <code>Configuration</code>.</p>
+
+<p>This is a PrestaShop-specific object, built to help developers manage
+their module settings. It stores these settings in PrestaShop&rsquo;s database
+without require to use SQL queries. Specifically, this object handles
+data from the <code>ps_configuration</code> database table.</p>
+
+<h3 id="the-main-methods">The main methods</h3>
+
+<p>So far, we&rsquo;ve used three methods, to which we&rsquo;ll add a fourth one in the
+list below:</p>
+
+<ul>
+<li><code>Configuration::get('myVariable')</code>: retrieves a specific value from
+the database.</li>
+<li><code>Configuration::getMultiple(array('myFirstVariable', 'mySecondVariable', 'myThirdVariable'))</code>:
+retrieves several values from the database, and returns a PHP array.</li>
+<li><code>Configuration::updateValue('myVariable', $value)</code>: updates an
+existing database variable with a new value. If the variable does
+not yet exist, it creates it with that value.</li>
+<li><code>Configuration::deleteByName('myVariable')</code>: deletes the
+database variable.</li>
+</ul>
+
+<p>There are many more, such as <code>getInt()</code> or <code>hasContext()</code>, but these
+four are the ones you will use the most.</p>
+
+<p>Note that when using <code>updateValue()</code>, the content of \$value can be
+anything, be it a string, a number, a serialized PHP array or a JSON
+object. As long as you properly code the data handling function,
+anything goes. For instance, here is how to handle a PHP array using the
+<code>Configuration</code> object:</p>
+
+<pre><code class="language-php">// Storing a serialized array.
+Configuration::updateValue('MYMODULE_SETTINGS', serialize(array(true, true, false)));
+
+// Retrieving the array.
+$configuration_array = unserialize(Configuration::get('MYMODULE_SETTINGS'));
+</code></pre>
+
+<p>As you can see, this in a very useful and easy-to-use object, and you
+will certainly use it in many situations. Most native modules use it too
+for their own settings.</p>
+
+<h3 id="handling-the-multistore-feature">Handling the Multistore feature</h3>
+
+<p>By default, all these methods work within the confines of the current
+store context, whether PrestaShop is using the multistore feature or
+not.</p>
+
+<p>However, it is possible to work outside of the current context and
+impact other known stores. This is done using three optional parameters,
+which are not presented in the list above:</p>
+
+<ul>
+<li><code>id_lang</code>: enables you to force the language with which you want
+to work.</li>
+<li><code>id_shop_group</code>: enables you to indicate the shop group of the
+target store.</li>
+<li><code>id_shop</code>: enables you to indicate the id of the target store.</li>
+</ul>
+
+<p>By default, these three parameters use the values of the current
+context, but you can use them to target other stores.</p>
+
+<p>Note that it is not recommended to change the default values of these
+variables, even more so if the module you are writing is to be used on
+other stores than your own. They should only be used if the module is
+for your own store, and you know the id and shop group of all of your
+shops.</p>
+
+<h3 id="retrieving-external-values-from-the-ps-configuration-data-table">Retrieving external values from the ps_configuration data table</h3>
+
+<p>You are not limited to your own variables: PrestaShop stores all its own
+configuration settings in the ps_configuration table. There are
+literally hundreds of settings, and you can access them just as easily
+as you would access your own. For instance:</p>
+
+<ul>
+<li><code>Configuration::get('PS_LANG_DEFAULT')</code>: retrieves the ID for the
+default language.</li>
+<li><code>Configuration::get('PS_TIMEZONE')</code>: retrieves the name of the
+current timezone, in standard TZ format (see:
+<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</a>).</li>
+<li><code>Configuration::get('PS_DISTANCE_UNIT')</code>: retrieves the default
+distance unit (&ldquo;km&rdquo; for kilometers, etc.).</li>
+<li><code>Configuration::get('PS_SHOP_EMAIL')</code>: retrieves the main contact
+e-mail address.</li>
+<li><code>Configuration::get('PS_NB_DAYS_NEW_PRODUCT')</code>: retrieves the number
+of days during which a newly-added product is considered &ldquo;New&rdquo;
+by PrestaShop.</li>
+</ul>
+
+<p>Dive into the <code>ps_configuration</code> table in order to discover many other
+settings!</p>
+
+<h2 id="the-shop-object">The Shop object</h2>
+
+<p>Another of install()&rsquo;s lines is this:</p>
+
+<pre><code class="language-php">if (Shop::isFeatureActive()) {
+    Shop::setContext(Shop::CONTEXT_ALL);
+}
+</code></pre>
+
+<p>As said earlier, here we check that the Multistore feature is enabled,
+and if so, set the current context to all shops on this installation of
+PrestaShop.</p>
+
+<p>The Shop object helps you manage the multistore feature. We will not
+dive in the specifics here, but will simply present the two methods that
+are used in this sample code:</p>
+
+<ul>
+<li><code>Shop::isFeatureActive()</code>: This simply checks whether the multistore
+feature is active or not, and if at least two stores are
+presently activated.</li>
+<li><code>Shop::setContext(Shop::CONTEXT_ALL)</code>: This changes the context in
+order to apply coming changes to all existing stores instead of only
+the current store.</li>
+</ul>
+
+<p>The Context is explained in more details in the &ldquo;Using the Context
+Object&rdquo; chapter of this Developer Guide.</p>
+
+<h2 id="the-icon-file">The icon file</h2>
+
+<p>To put the finishing touch to this basic module, you should add an icon,
+which will be displayed next to the module&rsquo;s name in the back office
+modules list. In case your module is made for a prominent service,
+having that service&rsquo;s logo visible brings trust. Make sure you do not
+use a logo already used by one of the native modules, or without
+authorization from the owner of the logo/service.</p>
+
+<p>The icon file must respect these requirements:</p>
+
+<ul>
+<li>It must be placed on the module&rsquo;s main folder.</li>
+<li>32*32 PNG image.</li>
+<li>Named <code>logo.png</code>.</li>
+<li>Tip: There are many free 32*32 icon libraries available. Here are a
+few: <a href="https://www.fatcow.com/free-icons">https://www.fatcow.com/free-icons</a> (very close to the
+FamFamFam one) or
+<a href="http://www.iconarchive.com/show/danish-royalty-free-icons-by-jonas-rask.html">http://www.iconarchive.com/show/danish-royalty-free-icons-by-jonas-rask.html</a>
+(Danish Royalty Free)</li>
+</ul>
+
+<h2 id="installing-the-module">Installing the module</h2>
+
+<p>Now that all basics are in place, reload the back office&rsquo;s &ldquo;Modules&rdquo;
+pages, in the &ldquo;Front office features&rdquo; section, you should find your
+module. Install it (or reset it if it is already installed).</p>
+
+<p>During the module&rsquo;s installation, PrestaShop automatically creates a
+small <code>config.xml</code> file in the module&rsquo;s folder, which stores the
+configuration information. You should be very careful when editing by
+hand.</p>
+
+<h2 id="keeping-things-secure">Keeping things secure</h2>
+
+<p>Once your module is online, its files could be accessed by anyone from the Internet. Even if they cannot trigger anything but PHP errors, you might want to prevent this from happening.</p>
+
+<p>You can achieve this by adding an <code>index.php</code> file at the root of any module folder you create. Here is a suggestion for what to put in the file.</p>
+
+<pre><code class="language-php">header(&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT&quot;);
+header(&quot;Last-Modified: &quot;.gmdate(&quot;D, d M Y H:i:s&quot;).&quot; GMT&quot;);
+header(&quot;Cache-Control: no-store, no-cache, must-revalidate&quot;);
+header(&quot;Cache-Control: post-check=0, pre-check=0&quot;, false);
+header(&quot;Pragma: no-cache&quot;);
+header(&quot;Location: ../&quot;);
+exit;
+</code></pre>
+
+
+
+
+<footer class="article-footer">
+  
+<div>
+  Last updated on April 16, 2019
+  :
+  <a href="https://github.com/PrestaShop/docs/commit/6a6cbd2801fa8f4d77ca1e697d0ac84a1f2d9222">"Change many &#34;http://&#34; links by &#34;https://&#34;" (6a6cbd2)</a>
+  
+</div>
+
+
+  <div class="license">
+    This article is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  </div>
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1563219085"></script>
+    <script src="/js/perfect-scrollbar.min.js?1563219085"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1563219085"></script>
+    <script src="/js/jquery.sticky.js?1563219085"></script>
+    <script src="/js/featherlight.min.js?1563219085"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1563219085"></script>
+    <script src="/js/highlight.pack.js?1563219085"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1563219085"></script>
+    <script src="/js/learn.js?1563219085"></script>
+    <script src="/js/hugo-learn.js?1563219085"></script>
+
+    <link href="/mermaid/mermaid.css?1563219085" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1563219085"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-2753771-44', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+</html>
+

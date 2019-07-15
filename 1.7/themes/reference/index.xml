@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme development reference on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/themes/reference/</link>
+    <description>Recent content in Theme development reference on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/themes/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Migrating from PrestaShop 1.6</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/migration-from-16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/migration-from-16/</guid>
+      <description>Migrating from PrestaShop 1.6 PrestaShop 1.7 introduces a totally reworked theme system from version 1.6, with the goal of making PrestaShop upgrades easier, and making it easier and faster to create a brand new theme.
+The huge change to the theme system means that there is no easy way to migrate your PrestaShop 1.6 theme to PrestaShop 1.7.
+When using the automatic upgrade from PrestaShop 1.6 to 1.7, your theme will be switched to the new default theme, called &amp;ldquo;Classic&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Overriding modules</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/overriding-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/overriding-modules/</guid>
+      <description>Overriding modules When you write a theme, you often need to override the templates and assets coming from a module so that they match your theme&amp;rsquo;s specific markup needs. Themes can override modules&amp;rsquo; assets (CSS and JavaScript only) by placing the corresponding file at a specific location.
+With PrestaShop 1.7, all module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory). Every PS 1.7 module developer should be aware of this change (introduced with PR 5020: https://github.</description>
+    </item>
+    
+    <item>
+      <title>RTL support</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/rtl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/rtl/</guid>
+      <description>RTL support PrestaShop supports RTL (Right-to-left) themes natively.
+RTL stylesheets There are two ways of customizing your theme for RTL: either by adding an override file that is only loaded for RTL languages, or by using completely different version of the theme&amp;rsquo;s stylesheets.
+CSS override file PrestaShop will try to load a css file named rtl.css after your theme&amp;rsquo;s ones when displayed in an RTL language. You can use this file to place any style override you need for RTL.</description>
+    </item>
+    
+    <item>
+      <title>Smarty helper functions</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/smarty-helpers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/smarty-helpers/</guid>
+      <description>Helpers: functions and modifiers {url} PrestaShop 1.7 introduces a new Smarty helper to generate URLs. This will take care of SSL, domain name, virtual and physical base URI, parameters concatenation, and of course URL rewritting.
+{url} uses the Link class internally.
+Please see the $urls dataset to find already regenerated urls (such as home, cart, login and so on).
+ An instance of the Link object is still passed to the templates for backward compatibility purposes, since it was heavily used.</description>
+    </item>
+    
+    <item>
+      <title>Theme translation</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/theme-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/theme-translation/</guid>
+      <description>Theme translation PrestaShop 1.7 comes with a new translation system for themes.
+It is explained in details in this Build article.</description>
+    </item>
+    
+  </channel>
+</rss>

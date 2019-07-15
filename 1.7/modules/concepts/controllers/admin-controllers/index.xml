@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Admin controllers on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/</link>
+    <description>Recent content in Admin controllers on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Apr 2019 15:52:03 +0200</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adding module links in the back-office side menu</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/tabs/</guid>
+      <description>Adding module links in the back-office side menu  On the PrestaShop back office, the links on the side menu are linked to AdminControllers and ModuleAdminController classes. The first ones come from the PrestaShop Core, but the second ones are defined by the modules. If you want to add a link to your ModuleAdminControllers in the back office sidebar, this guide is for you.
+Tabs registration In order to register new links, open your main module class.</description>
+    </item>
+    
+  </channel>
+</rss>

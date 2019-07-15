@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/development/database/</link>
+    <description>Recent content in Database on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2019 17:44:20 +0300</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/development/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DBQuery class</title>
+      <link>https://devdocs.prestashop.com/1.7/development/database/dbquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/database/dbquery/</guid>
+      <description>The DBQuery class The DBQuery class is a query builder which helps you create SQL queries. For instance:
+$sql = new DbQuery(); $sql-&amp;gt;select(&#39;*&#39;); $sql-&amp;gt;from(&#39;cms&#39;, &#39;c&#39;); $sql-&amp;gt;innerJoin(&#39;cms_lang&#39;, &#39;l&#39;, &#39;c.id_cms = l.id_cms AND l.id_lang = &#39;.(int)$id_lang); $sql-&amp;gt;where(&#39;c.active = 1&#39;); $sql-&amp;gt;orderBy(&#39;position&#39;); return Db::getInstance()-&amp;gt;executeS($sql);  Main methods  __toString()  Generate and get the query. build()  Generate and get the query (return a string). from(string $table, mixed $alias = null)  Set table for FROM clause.</description>
+    </item>
+    
+    <item>
+      <title>ObjectModel class</title>
+      <link>https://devdocs.prestashop.com/1.7/development/database/objectmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/database/objectmodel/</guid>
+      <description>The ObjectModel class When needing to dive deep, you have to use the ObjectModel class. This is the main object of PrestaShop’s object model. It can be overridden… with precaution.
+It is an Active Record kind of class (see: https://en.wikipedia.org/wiki/Active_record_pattern). The table attributes or view attributes of PrestaShop’s database are encapsulated in this class. Therefore, the class is tied to a database record. After the object has been instantiated, a new record is added to the database.</description>
+    </item>
+    
+    <item>
+      <title>Database structure</title>
+      <link>https://devdocs.prestashop.com/1.7/development/database/structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/database/structure/</guid>
+      <description>Maintaining the database Database structure definition Global definition The database structure of PrestaShop can be found in install/data/db_structure.sql (1.7.3.x releases example).
+It is used one time, during the installation of PrestaShop. It contains the structure of almost all tables. If a table needs to be added or modified, this the file you should open.
+Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables have been migrated to doctrine entities (i.</description>
+    </item>
+    
+  </channel>
+</rss>

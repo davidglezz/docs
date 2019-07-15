@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to benchmark your PrestaShop on PrestaShop Developer Documentation</title>
+    <link>https://devdocs.prestashop.com/1.7/scale/benchmark/</link>
+    <description>Recent content in How to benchmark your PrestaShop on PrestaShop Developer Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2019 13:49:14 +0200</lastBuildDate>
+    
+	<atom:link href="https://devdocs.prestashop.com/1.7/scale/benchmark/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Front-Office Benchmark</title>
+      <link>https://devdocs.prestashop.com/1.7/scale/benchmark/front-office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/scale/benchmark/front-office/</guid>
+      <description>How to benchmark your PrestaShop Shop (Front-office) Benchmark methodology In order to benchmark the performances of your shop, you will use the siege testing tool. Try to always use the latest available version HERE.
+Setup siege configuration Create a txt file url.txt with various urls from your shop: (prepend with the domain of your shop)
+http://localhost:8080/ http://localhost:8080/panier http://localhost:8080/meilleures-ventes http://localhost:8080/nouveaux-produits http://localhost:8080/promotions http://localhost:8080/men/1-1-hummingbird-printed-t-shirt.html#/1-taille-s/8-couleur-blanc http://localhost:8080/accessories/3-mug-the-best-is-yet-to-come.html http://localhost:8080/3-clothes http://localhost:8080/6-accessories http://localhost:8080/3-clothes?q=Prix-€-28-34 http://localhost:8080/magasins http://localhost:8080/fournisseur http://localhost:8080/recherche?controller=search&amp;amp;s=sweater http://localhost:8080/2-accueil  Run the siege benchmark Then run a siege benchmark using this file:</description>
+    </item>
+    
+    <item>
+      <title>Back-Office Benchmark</title>
+      <link>https://devdocs.prestashop.com/1.7/scale/benchmark/back-office/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/scale/benchmark/back-office/</guid>
+      <description>How to benchmark your PrestaShop Shop (Back-office) Benchmark methodology In order to benchmark the performances of the backoffice of your shop, you will use the Gatling testing tool.
+ Note: Backoffice benchmark is only possible starting with prestashop 1.7.4.0!
+If you want still want to run the test for version &amp;lt; 1.7.4.0, take a look at this PR: https://github.com/PrestaShop/PrestaShop/pull/8876
+ What is Gatling? Gatling is a stress tool. Development is currently focusing on HTTP support.</description>
+    </item>
+    
+  </channel>
+</rss>
